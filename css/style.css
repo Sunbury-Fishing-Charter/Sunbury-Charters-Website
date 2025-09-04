@@ -136,5 +136,5 @@ header nav ul li a:hover {
     max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    object-fit: cover;  /* crop to fill box without distortion */
+    object-fit: cover;
 }
