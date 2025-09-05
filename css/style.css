@@ -296,6 +296,7 @@ header nav ul li a:hover {
     color: white;
     border-color: #1a2733;
     box-shadow: 0 2px 2px black;
+    border-radius: 50px;
 }
 
 /* Phone number text */
