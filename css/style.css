@@ -376,64 +376,33 @@ header nav ul li a:hover {
     }
 }
 
+
 /* ============================================
    MOBILE RESPONSIVE DESIGN
    (Screens smaller than 768px)
    ============================================ */
 
 @media (max-width: 768px) {
-    /* Mobile header adjustments */
-    header {
-        padding: 1vh 1rem;
-    }
     
-    /* Stack navigation vertically on mobile */
+    /* Keep navigation in one row */
     .header-nav {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
+        gap: 0.5rem;
     }
-    
-    /* Tighter spacing for mobile nav */
-    .nav-left,
-    .nav-right {
-        gap: 0.8rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    /* Smaller logo on mobile */
-    .front-page-logo {
-        height: 6vh;
-        margin-bottom: 0.5rem;
-    }
-    
-    /* Allow nav items to wrap on mobile */
-    header nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    /* Very tight spacing for mobile nav items */
-    header nav ul li {
-        margin: 0.2rem 0.5rem;
-    }
-    
-    /* Smaller font for mobile nav */
-    header nav ul li a {
-        font-size: 1rem;
-    }
+
     
     /* Adjust banner for mobile header size */
     .banner-pic {
         height: 50vh;
-        margin-top: 15vh; /* Account for larger mobile header */
     }
     
     /* Adjust banner title position */
     .pic-title {
         top: 40%;
         padding: 0 1.5rem;
+        font-size: 2.5rem;
     }
     
     /* Adjust banner date position */
@@ -442,17 +411,32 @@ header nav ul li a:hover {
         padding: 0 1.5rem;
     }
     
-    /* Stack photos vertically on mobile */
+    /* Horizontal scrolling photos on mobile */
     .top-fishing-examples {
-        flex-direction: column;
-        gap: 1.5rem;
-        padding: 5% 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* Hide scrollbar but keep functionality */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
     }
     
-    /* Make photos bigger when stacked */
+    .top-fishing-examples::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    /* Fixed size photos for horizontal scrolling */
     .top-fishing-examples img {
-        width: min(300px, 90vw);
-        height: 350px;
+        flex: 0 0 auto; /* Don't grow or shrink */
+        width: 150px; /* Fixed width for consistency */
+        height: 200px; /* Fixed height for consistency */
+        object-fit: cover; /* Crop images to fit without distortion */
+        border-radius: 8px;
+        scroll-snap-align: start;
     }
     
     /* Adjust main content container for mobile */
@@ -519,11 +503,7 @@ header nav ul li a:hover {
         height: 40vh;
     }
     
-    /* Adjust photo size for small phones */
-    .top-fishing-examples img {
-        width: min(280px, 95vw);
-        height: 320px;
-    }
+    /* REMOVED THE CONFLICTING PHOTO RULES - they now inherit from the 768px media query */
     
     /* Tighter padding for small phones */
     .fishing-charter-container {
