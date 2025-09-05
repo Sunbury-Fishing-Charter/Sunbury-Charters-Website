@@ -235,6 +235,31 @@ header nav ul li a:hover {
     gap: 20px;
 }
 
+
+
+.facebook  {
+    padding-top: 18px;
+}
+
+.facebook button {
+    font-size: 1.2rem;
+    background-color: #1a2733;
+    color: white;
+    border-color: #1a2733;
+    text-shadow: 0 3px 8px black;
+}
+
+.call-us-text {
+    font-size: 1.2rem;
+}
+
+.email-text {
+    font-size: 1.3rem;
+}
+
+
+
+
 /* Tablet responsive design */
 @media (max-width: 1024px) {
     .header-nav {
