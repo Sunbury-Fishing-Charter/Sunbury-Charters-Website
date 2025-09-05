@@ -1,7 +1,15 @@
+/* ============================================
+   BASIC PAGE SETUP
+   ============================================ */
+
 html, body {
   margin: 0;
   padding: 0;
 }
+
+/* ============================================
+   TOP NAVIGATION BAR (HEADER)
+   ============================================ */
 
 header {
     position: fixed;
@@ -22,6 +30,7 @@ header {
     justify-content: space-evenly;
 }
 
+/* Navigation links on left and right sides */
 .nav-left,
 .nav-right {
     display: flex;
@@ -31,12 +40,14 @@ header {
     margin: 0;
 }
 
+/* Company logo in the header */
 .front-page-logo {
     height: 7.5vh;
     width: auto;
     padding-top: 0.3vh;
 }
 
+/* All navigation menu items */
 header nav ul {
     display: flex;
     justify-content: space-evenly;
@@ -46,10 +57,12 @@ header nav ul {
     padding: 0;
 }
 
+/* Individual navigation items */
 header nav ul li {
     margin: 0 1.5rem;
 }
 
+/* Navigation link text styling */
 header nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -58,9 +71,14 @@ header nav ul li a {
     transition: color 0.2s;
 }
 
+/* Navigation link hover effect */
 header nav ul li a:hover {
     color: #ffb347;
 }
+
+/* ============================================
+   BANNER SECTION (BIG IMAGE AT TOP)
+   ============================================ */
 
 #banner-picture {
     width: 100vw;
@@ -68,6 +86,7 @@ header nav ul li a:hover {
     padding: 0;
 }
 
+/* Container for the main banner image */
 .banner-pic {
     position: relative;
     width: 100vw;
@@ -78,6 +97,7 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
+/* The actual banner image */
 .banner-pic img {
     width: 100vw;
     height: 100%;
@@ -85,6 +105,7 @@ header nav ul li a:hover {
     display: block;
 }
 
+/* Main title text over the banner image */
 .pic-title {
     position: absolute;
     width: 100%;
@@ -105,6 +126,7 @@ header nav ul li a:hover {
     padding: 0 1rem;
 }
 
+/* Date text under the main title */
 .pic-title-date {
     position: absolute;
     left: 50%;
@@ -121,6 +143,11 @@ header nav ul li a:hover {
     padding: 0 1rem;
 }
 
+/* ============================================
+   PHOTO GALLERY SECTION
+   ============================================ */
+
+/* Container for fishing example photos */
 .top-fishing-examples {
     display: flex;
     justify-content: center;
@@ -132,6 +159,7 @@ header nav ul li a:hover {
     background-color: #1a2733;
 }
 
+/* Individual fishing photos */
 .top-fishing-examples img {
     width: min(320px, 90vw);
     height: 380px;
@@ -141,12 +169,17 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 
-/* Updated fishing charter section styles - Jacksonville layout */
+/* ============================================
+   MAIN CONTENT SECTION (CAPTAIN INFO)
+   ============================================ */
+
+/* Background section for the captain info */
 .fishing-charter-in-sunbury {
     background-color: #f8f9fa;
     padding: clamp(40px, 8vw, 60px) 20px;
 }
 
+/* White container box for captain content */
 .fishing-charter-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -156,6 +189,7 @@ header nav ul li a:hover {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+/* Main heading text */
 .main-heading {
     text-align: center;
     font-size: clamp(2rem, 5vw, 3.3rem);
@@ -166,6 +200,7 @@ header nav ul li a:hover {
     font-family: 'Georgia', serif;
 }
 
+/* Container that holds image and text side by side */
 .content-wrapper {
     display: flex;
     align-items: center;
@@ -173,10 +208,12 @@ header nav ul li a:hover {
     margin-top: 20px;
 }
 
+/* Container for captain's photo */
 .image-container {
     flex-shrink: 0;
 }
 
+/* Captain's circular photo */
 .captain-image {
     width: clamp(200px, 25vw, 280px);
     height: clamp(200px, 25vw, 280px);
@@ -186,10 +223,12 @@ header nav ul li a:hover {
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
+/* Text content area */
 .text-content {
     flex: 1;
 }
 
+/* Subheading text */
 .subheading {
     font-size: clamp(1.3rem, 3vw, 1.7rem);
     color: #2c3e50;
@@ -198,6 +237,7 @@ header nav ul li a:hover {
     font-family: 'Georgia', serif;
 }
 
+/* Description paragraph text */
 .description {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     color: #555;
@@ -206,9 +246,10 @@ header nav ul li a:hover {
     font-family: 'Georgia', serif;
 }
 
+/* Get started today button */
 .cta-button {
-    background-color: #1e3a5f;
-    color: white;
+    background-color: #1e3a5f;  /* Dark blue background */
+    color: white;               /* White text */
     padding: clamp(12px, 2.5vw, 15px) clamp(25px, 5vw, 35px);
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     font-weight: bold;
@@ -219,90 +260,132 @@ header nav ul li a:hover {
     font-family: 'Georgia', serif;
 }
 
+/* Button hover effect */
 .cta-button:hover {
-    background-color: #2c4f75;
+    background-color: #2c4f75;  /* Lighter blue on hover */
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
 }
 
+/* ============================================
+   FOOTER SECTION
+   ============================================ */
+
+/* Main footer container */
 .footer {
     background-color: #1a2733;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 20px;
     gap: 20px;
 }
 
-
-
+/* Facebook section in footer */
 .facebook  {
     padding-top: 18px;
 }
 
+/* Facebook button styling */
 .facebook button {
     font-size: 1.2rem;
     background-color: #1a2733;
     color: white;
     border-color: #1a2733;
-    box-shadow: 0 2px 3px black;
+    box-shadow: 0 2px 2px black;
 }
 
+/* Phone number text */
 .call-us-text {
     font-size: 1.2rem;
 }
+   
 
+/* Email text */
 .email-text {
     font-size: 1.3rem;
 }
 
+/* Copyright text styling */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #2a3744;
+    color: #ccc;
+    order: 999; /* This makes it appear last */
+}
+
+.credit-text {
+    text-align: right;
+    font-size: 0.7rem;
+}
 
 
+/* ============================================
+   TABLET RESPONSIVE DESIGN
+   (Screens smaller than 1024px)
+   ============================================ */
 
-/* Tablet responsive design */
 @media (max-width: 1024px) {
+    /* Make header navigation tighter */
     .header-nav {
         justify-content: space-between;
         padding: 0 1rem;
     }
     
+    /* Reduce spacing between nav items */
     .nav-left,
     .nav-right {
         gap: 1rem;
     }
     
+    /* Smaller margins for nav items */
     header nav ul li {
         margin: 0 0.8rem;
     }
     
+    /* Smaller font size for nav links */
     header nav ul li a {
         font-size: 1.2rem;
     }
     
+    /* Adjust photo gallery for tablets */
     .top-fishing-examples {
         gap: 1rem;
         padding: 3% 1rem;
     }
     
+    /* Make fishing photos smaller on tablets */
     .top-fishing-examples img {
         width: min(280px, 45vw);
         height: 320px;
     }
 }
 
-/* Mobile responsive design */
+/* ============================================
+   MOBILE RESPONSIVE DESIGN
+   (Screens smaller than 768px)
+   ============================================ */
+
 @media (max-width: 768px) {
+    /* Mobile header adjustments */
     header {
         padding: 1vh 1rem;
     }
     
+    /* Stack navigation vertically on mobile */
     .header-nav {
         flex-direction: column;
         gap: 1rem;
         align-items: center;
     }
     
+    /* Tighter spacing for mobile nav */
     .nav-left,
     .nav-right {
         gap: 0.8rem;
@@ -310,66 +393,79 @@ header nav ul li a:hover {
         justify-content: center;
     }
     
+    /* Smaller logo on mobile */
     .front-page-logo {
         height: 6vh;
         margin-bottom: 0.5rem;
     }
     
+    /* Allow nav items to wrap on mobile */
     header nav ul {
         flex-wrap: wrap;
         justify-content: center;
     }
     
+    /* Very tight spacing for mobile nav items */
     header nav ul li {
         margin: 0.2rem 0.5rem;
     }
     
+    /* Smaller font for mobile nav */
     header nav ul li a {
         font-size: 1rem;
     }
     
+    /* Adjust banner for mobile header size */
     .banner-pic {
         height: 50vh;
         margin-top: 15vh; /* Account for larger mobile header */
     }
     
+    /* Adjust banner title position */
     .pic-title {
         top: 40%;
         padding: 0 1.5rem;
     }
     
+    /* Adjust banner date position */
     .pic-title-date {
         top: 60%;
         padding: 0 1.5rem;
     }
     
+    /* Stack photos vertically on mobile */
     .top-fishing-examples {
         flex-direction: column;
         gap: 1.5rem;
         padding: 5% 1rem;
     }
     
+    /* Make photos bigger when stacked */
     .top-fishing-examples img {
         width: min(300px, 90vw);
         height: 350px;
     }
     
+    /* Adjust main content container for mobile */
     .fishing-charter-container {
         padding: 30px 15px;
         margin: 0 10px;
     }
     
+    /* Stack captain image and text vertically */
     .content-wrapper {
         flex-direction: column;
         text-align: center;
         gap: 25px;
     }
     
+    /* Smaller captain image on mobile */
     .captain-image {
         width: min(220px, 80vw);
         height: min(220px, 80vw);
     }
     
+    /* Stack footer items vertically */
     .footer {
         flex-direction: column;
         text-align: center;
@@ -377,57 +473,76 @@ header nav ul li a:hover {
     }
 }
 
-/* Small mobile devices */
+/* ============================================
+   SMALL MOBILE RESPONSIVE DESIGN
+   (Screens smaller than 480px - very small phones)
+   ============================================ */
+
 @media (max-width: 480px) {
+    /* Even tighter header spacing */
     header {
         padding: 0.8vh 0.3rem;
     }
     
+    /* Minimal gaps for tiny screens */
     .nav-left,
     .nav-right {
         gap: 0.3rem;
     }
     
+    /* Very small logo for tiny screens */
     .front-page-logo {
         height: 5vh;
     }
     
+    /* Minimal margins for nav items */
     header nav ul li {
         margin: 0 0.3rem;
     }
     
+    /* Small font for tiny screens */
     header nav ul li a {
         font-size: 0.9rem;
     }
     
+    /* Shorter banner on small phones */
     .banner-pic {
         height: 40vh;
     }
     
+    /* Adjust photo size for small phones */
     .top-fishing-examples img {
         width: min(280px, 95vw);
         height: 320px;
     }
     
+    /* Tighter padding for small phones */
     .fishing-charter-container {
         padding: 25px 10px;
         margin: 0 5px;
         border-radius: 5px;
     }
     
+    /* Even smaller captain image */
     .captain-image {
         width: min(180px, 75vw);
         height: min(180px, 75vw);
     }
 }
 
-/* Large screen optimization */
+/* ============================================
+   LARGE SCREEN OPTIMIZATION
+   (Screens bigger than 1200px - big desktops)
+   ============================================ */
+
 @media (min-width: 1200px) {
+    /* More spacing for large screens */
     .top-fishing-examples {
         gap: 1.5%;
         padding: 2% 0;
     }
     
+    /* Bigger photos for large screens */
     .top-fishing-examples img {
         width: 350px;
         height: 400px;
