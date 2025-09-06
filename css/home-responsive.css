@@ -50,7 +50,7 @@
     /* Keep navigation in one row */
      .header-nav {
         justify-content: center; /* Centers everything */
-        gap: 0.5rem;
+        gap: 0.4rem;
         padding: 0 0.3rem;
     }
 
@@ -164,41 +164,42 @@
 
 /* ============================================
    SMALL MOBILE RESPONSIVE DESIGN
-   (Screens smaller than 480px - very small phones)
+   (Screens smaller than 480px)
    ============================================ */
 
 @media (max-width: 480px) {
     /* Even tighter header spacing */
     header {
-        padding: 0.8vh 0.3rem;
+        padding: 0.8vh 0.2rem;
     }
     
     /* Minimal gaps for tiny screens */
     .nav-left,
     .nav-right {
-        gap: 0.3rem;
+        gap: 2rem;
     }
     
     /* Very small logo for tiny screens */
     .front-page-logo {
-        height: 5vh;
+        height: 4vh;
+        max-width: 18vw;
     }
     
     /* Minimal margins for nav items */
     header nav ul li {
-        margin: 0 0.3rem;
+        margin: 0 0.15rem;
     }
     
     /* Small font for tiny screens */
     header nav ul li a {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
     
     /* Shorter banner on small phones */
     .banner-pic {
         height: 40vh;
     }
-
+    
     /* Tighter padding for small phones */
     .fishing-charter-container {
         padding: 25px 10px;
@@ -210,6 +211,34 @@
     .captain-image {
         width: min(180px, 75vw);
         height: min(180px, 75vw);
+    }
+    
+    /* Even tighter footer spacing */
+    .footer-content {
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+    
+    /* Smaller text for tiny screens */
+    .call-us-text {
+        font-size: 0.73rem;
+    }
+    
+    .email-text {
+        font-size: 0.83rem;
+    }
+    
+    .facebook button {
+        font-size: 0.73rem;
+        padding: 3px 0;
+    }
+
+    .copyright {
+        font-size: 0.55rem;
+    }
+
+    .credit-text {
+        font-size: 0.45rem;
     }
 }
 
