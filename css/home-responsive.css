@@ -1,0 +1,233 @@
+/* ============================================
+   TABLET RESPONSIVE DESIGN
+   (Screens smaller than 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    /* Make header navigation tighter */
+    .header-nav {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    
+    /* Reduce spacing between nav items */
+    .nav-left,
+    .nav-right {
+        gap: 1rem;
+    }
+    
+    /* Smaller margins for nav items */
+    header nav ul li {
+        margin: 0 0.8rem;
+    }
+    
+    /* Smaller font size for nav links */
+    header nav ul li a {
+        font-size: 1.2rem;
+    }
+    
+    /* Adjust photo gallery for tablets */
+    .top-fishing-examples {
+        gap: 1rem;
+        padding: 3% 1rem;
+    }
+    
+    /* Make fishing photos smaller on tablets */
+    .top-fishing-examples img {
+        width: min(280px, 45vw);
+        height: 320px;
+    }
+}
+
+
+/* ============================================
+   MOBILE RESPONSIVE DESIGN
+   (Screens smaller than 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+    
+    /* Keep navigation in one row */
+     .header-nav {
+        justify-content: center; /* Centers everything */
+        gap: 0.5rem;
+        padding: 0 0.3rem;
+    }
+
+    .nav-left {
+        margin-right: 0.5rem; /* Push slightly right */
+    }
+
+     .nav-right {
+        margin-left: 0.5rem; /* Push slightly left */
+    }
+
+    
+    /* Adjust banner for mobile header size */
+    .banner-pic {
+        height: 50vh;
+    }
+    
+    /* Adjust banner title position */
+    .pic-title {
+        top: 40%;
+        padding: 0 1.5rem;
+        font-size: 2.5rem;
+    }
+    
+    /* Adjust banner date position */
+    .pic-title-date {
+        top: 60%;
+        padding: 0 1.5rem;
+    }
+    
+    /* Horizontal scrolling photos on mobile */
+    .top-fishing-examples {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* Hide scrollbar but keep functionality */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+    }
+    
+    .top-fishing-examples::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    /* Fixed size photos for horizontal scrolling */
+    .top-fishing-examples img {
+        flex: 0 0 auto; /* Don't grow or shrink */
+        width: 150px; /* Fixed width for consistency */
+        height: 200px; /* Fixed height for consistency */
+        object-fit: cover; /* Crop images to fit without distortion */
+        border-radius: 8px;
+        scroll-snap-align: start;
+    }
+    
+    /* Adjust main content container for mobile */
+    .fishing-charter-container {
+        padding: 30px 15px;
+        margin: 0 10px;
+    }
+    
+    /* Stack captain image and text vertically */
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    /* Smaller captain image on mobile */
+    .captain-image {
+        width: min(220px, 80vw);
+        height: min(220px, 80vw);
+    }
+    
+     /* Keep main footer items on one line */
+    .footer-content {
+        justify-content: space-evenly; /* Spreads items across the width */
+        flex-wrap: nowrap; /* Prevents wrapping to new lines */
+        gap: 20px; /* Smaller gap for mobile */
+        margin-bottom: 10px;
+    }
+    
+    /* Smaller text on mobile to fit better */
+    .call-us-text {
+        font-size: 0.8rem;
+    }
+    
+    .email-text {
+        font-size: 0.9rem;
+    }
+    
+    .facebook button {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+    
+    /* Copyright stays below on mobile */
+    .copyright {
+        font-size: 0.7rem;
+        padding-top: 10px;
+    }
+    
+    .credit-text {
+        font-size: 0.5rem;
+    }
+}
+
+
+/* ============================================
+   SMALL MOBILE RESPONSIVE DESIGN
+   (Screens smaller than 480px - very small phones)
+   ============================================ */
+
+@media (max-width: 480px) {
+    /* Even tighter header spacing */
+    header {
+        padding: 0.8vh 0.3rem;
+    }
+    
+    /* Minimal gaps for tiny screens */
+    .nav-left,
+    .nav-right {
+        gap: 0.3rem;
+    }
+    
+    /* Very small logo for tiny screens */
+    .front-page-logo {
+        height: 5vh;
+    }
+    
+    /* Minimal margins for nav items */
+    header nav ul li {
+        margin: 0 0.3rem;
+    }
+    
+    /* Small font for tiny screens */
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+    
+    /* Shorter banner on small phones */
+    .banner-pic {
+        height: 40vh;
+    }
+
+    /* Tighter padding for small phones */
+    .fishing-charter-container {
+        padding: 25px 10px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+    
+    /* Even smaller captain image */
+    .captain-image {
+        width: min(180px, 75vw);
+        height: min(180px, 75vw);
+    }
+}
+
+/* ============================================
+   LARGE SCREEN OPTIMIZATION
+   (Screens bigger than 1200px - big desktops)
+   ============================================ */
+
+@media (min-width: 1200px) {
+    /* More spacing for large screens */
+    .top-fishing-examples {
+        gap: 1.5%;
+        padding: 2% 0;
+    }
+    
+    /* Bigger photos for large screens */
+    .top-fishing-examples img {
+        width: 350px;
+        height: 400px;
+    }
+}
