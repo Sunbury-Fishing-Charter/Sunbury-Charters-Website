@@ -1,0 +1,333 @@
+
+/* ============================================
+   BASIC PAGE SETUP
+   ============================================ */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ============================================
+   TOP NAVIGATION BAR (HEADER)
+   ============================================ */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #1a2733;
+    z-index: 1000;
+    box-sizing: border-box;
+    padding: 1.5vh 2rem;
+}
+
+.header-nav {
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Company logo in the header */
+.front-page-logo {
+    height: 7.5vh;
+    width: auto;
+    padding-top: 0.3vh;
+}
+
+/* All navigation menu items */
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 1.5rem;
+}
+
+/* Navigation link text styling */
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
+    transition: color 0.2s;
+}
+
+/* Navigation link hover effect */
+header nav ul li a:hover {
+    color: #ffb347;
+}
+
+
+
+/* ============================================
+   FOOTER SECTION
+   ============================================ */
+
+/* Main footer container */
+.footer {
+    background-color: #1a2733;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+
+/* Facebook button styling */
+.facebook button {
+    font-size: 1.2rem;
+    background-color: #1a2733;
+    color: white;
+    border: 0px #1a2733;
+    padding: 6px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Phone number text */
+.call-us-text {
+    font-size: 1.2rem;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* Email text */
+.email-text {
+    font-size: 1.3rem;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* Hover effects */
+.call-us-text:hover,
+.facebook button:hover,
+.email-text:hover {
+    color: #ffb347;
+}
+
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.8rem;
+    padding-top: 10px;
+    border-top: 1px solid #2a3744;
+    color: #ccc;
+}
+
+.credit-text {
+    text-align: right;
+    font-size: 0.5rem;
+    margin: 5px 0 0 0;
+}
+
+
+
+/* ============================================
+   TABLET RESPONSIVE DESIGN
+   (Screens smaller than 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    /* Make header navigation tighter */
+    .header-nav {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    
+    /* Reduce spacing between nav items */
+    .nav-left,
+    .nav-right {
+        gap: 1rem;
+    }
+    
+    /* Smaller margins for nav items */
+    header nav ul li {
+        margin: 0 0.8rem;
+    }
+    
+    /* Smaller font size for nav links */
+    header nav ul li a {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* ============================================
+   MOBILE RESPONSIVE DESIGN
+   (Screens smaller than 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+    
+    /* Keep navigation in one row */
+     .header-nav {
+        justify-content: space-evenly; /* Centers everything */
+        gap: 1.2rem;
+        padding: 0.1vh;
+    }
+
+    .nav-left {
+        margin-right: 0.5rem; /* Push slightly right */
+    }
+
+     .nav-right {
+        margin-left: 0.5rem; /* Push slightly left */
+     }
+
+      /* Minimal gaps for tiny screens */
+    .nav-left,
+    .nav-right {
+        gap: 1.8rem;
+    }
+    
+    /* Very small logo for tiny screens */
+    .front-page-logo {
+        height: 7.5vh;
+        max-width: 100%;
+    }
+    
+    /* Minimal margins for nav items */
+    header nav ul li {
+        margin: 0.25rem;
+    }
+    
+    /* Small font for tiny screens */
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+     /* Keep main footer items on one line */
+    .footer-content {
+        justify-content: space-evenly; /* Spreads items across the width */
+        flex-wrap: nowrap; /* Prevents wrapping to new lines */
+        gap: 30px; /* Smaller gap for mobile */
+        margin-bottom: 10px;
+    }
+    
+    /* Smaller text on mobile to fit better */
+    .call-us-text {
+        font-size: 0.8rem;
+    }
+    
+    .email-text {
+        font-size: 0.9rem;
+    }
+    
+    .facebook button {
+        font-size: 0.8rem;
+    }
+    
+    /* Copyright stays below on mobile */
+    .copyright {
+        font-size: 0.7rem;
+        padding-top: 10px;
+    }
+    
+    .credit-text {
+        font-size: 0.5rem;
+    }
+}
+
+
+/* ============================================
+   SMALL MOBILE RESPONSIVE DESIGN
+   (Screens smaller than 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+     /* Even tighter header spacing */
+    header {
+        padding: 0.6vh;
+    }
+
+    .header-nav {
+        justify-content: space-evenly; /* Centers everything */
+        gap: 1rem;
+        padding: 0.2vh;
+    }
+    
+    /* Minimal gaps for tiny screens */
+    .nav-left,
+    .nav-right {
+        gap: 1.5rem;
+    }
+    
+    /* Very small logo for tiny screens */
+    .front-page-logo {
+        height: 6vh;
+        max-width: 100%;
+    }
+    
+    /* Minimal margins for nav items */
+    header nav ul li {
+        margin: 0 0.35rem;
+    }
+    
+    /* Small font for tiny screens */
+    header nav ul li a {
+        font-size: 1.05rem;
+    }
+
+    /* Even tighter footer spacing */
+    .footer-content {
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+    
+    /* Smaller text for tiny screens */
+    .call-us-text {
+        font-size: 0.73rem;
+    }
+    
+    .email-text {
+        font-size: 0.83rem;
+    }
+    
+    .facebook button {
+        font-size: 0.73rem;
+        padding: 3px 0;
+    }
+
+    .copyright {
+        font-size: 0.55rem;
+    }
+
+    .credit-text {
+        font-size: 0.45rem;
+    }
+}
+

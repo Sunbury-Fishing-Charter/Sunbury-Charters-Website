@@ -1,0 +1,201 @@
+/* ============================================
+   BASIC PAGE SETUP
+   ============================================ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ============================================
+   BANNER SECTION (BIG IMAGE AT TOP)
+   ============================================ */
+
+#banner-picture {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the main banner image */
+.banner-pic {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The actual banner image */
+.banner-pic img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Main title text over the banner image */
+.pic-title {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    text-align: center;
+    font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
+    font-size: clamp(2rem, 7vw, 4.5rem);
+    letter-spacing: 2.5px;
+    padding: 0 1rem;
+}
+
+/* Date text under the main title */
+.pic-title-date {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    width: 100%;
+    transform: translateX(-50%);
+    margin-top: 2.25rem;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    letter-spacing: 1px;
+    padding: 0 1rem;
+}
+
+/* ============================================
+   PHOTO GALLERY SECTION
+   ============================================ */
+
+/* Container for fishing example photos */
+.top-fishing-examples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8%;
+    flex-wrap: wrap;
+    padding-top: 2.7%;
+    padding-bottom: 2.7%;
+    background-color: #1a2733;
+}
+
+/* Individual fishing photos */
+.top-fishing-examples img {
+    width: min(320px, 90vw);
+    height: 380px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+/* ============================================
+   MAIN CONTENT SECTION (CAPTAIN INFO)
+   ============================================ */
+
+/* Background section for the captain info */
+.fishing-charter-in-sunbury {
+    background-color: #f8f9fa;
+    padding: clamp(40px, 8vw, 60px) 20px;
+}
+
+/* White container box for captain content */
+.fishing-charter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: clamp(30px, 6vw, 60px) clamp(20px, 4vw, 40px);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Main heading text */
+.main-heading {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3.3rem);
+    color: #2c3e50;
+    margin-bottom: clamp(20px, 4vw, 40px);
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-family: 'Georgia', serif;
+}
+
+/* Container that holds image and text side by side */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: clamp(20px, 4vw, 40px);
+    margin-top: 20px;
+}
+
+/* Container for captain's photo */
+.image-container {
+    flex-shrink: 0;
+}
+
+/* Captain's circular photo */
+.captain-image {
+    width: clamp(200px, 25vw, 280px);
+    height: clamp(200px, 25vw, 280px);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e8e8e8;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Text content area */
+.text-content {
+    flex: 1;
+}
+
+/* Subheading text */
+.subheading {
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-family: 'Georgia', serif;
+}
+
+/* Description paragraph text */
+.description {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+}
+
+/* Get started today button */
+.cta-button {
+    background-color: #1e3a5f;  /* Dark blue background */
+    color: white;               /* White text */
+    padding: clamp(12px, 2.5vw, 15px) clamp(25px, 5vw, 35px);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+    background-color: #2c4f75;  /* Lighter blue on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
+}
+

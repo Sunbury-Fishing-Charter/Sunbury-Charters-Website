@@ -4,28 +4,6 @@
    ============================================ */
 
 @media (max-width: 1024px) {
-    /* Make header navigation tighter */
-    .header-nav {
-        justify-content: space-between;
-        padding: 0 1rem;
-    }
-    
-    /* Reduce spacing between nav items */
-    .nav-left,
-    .nav-right {
-        gap: 1rem;
-    }
-    
-    /* Smaller margins for nav items */
-    header nav ul li {
-        margin: 0 0.8rem;
-    }
-    
-    /* Smaller font size for nav links */
-    header nav ul li a {
-        font-size: 1.2rem;
-    }
-    
     /* Adjust photo gallery for tablets */
     .top-fishing-examples {
         gap: 1rem;
@@ -46,33 +24,16 @@
    ============================================ */
 
 @media (max-width: 768px) {
-    
-    /* Keep navigation in one row */
-     .header-nav {
-        justify-content: center; /* Centers everything */
-        gap: 1.2rem;
-        padding: 0.1vh;
-    }
 
-    .nav-left {
-        margin-right: 0.5rem; /* Push slightly right */
-    }
-
-     .nav-right {
-        margin-left: 0.5rem; /* Push slightly left */
-    }
-
-    
     /* Adjust banner for mobile header size */
     .banner-pic {
-        height: 55vh;
+        height: 50vh;
     }
     
     /* Adjust banner title position */
     .pic-title {
-        top: 45%;
-        padding: 0 1.5rem;
-        font-size: 2.5rem;
+        top: 40%;
+        font-size: 2.6rem;
     }
     
     /* Adjust banner date position */
@@ -128,37 +89,7 @@
         height: min(220px, 80vw);
     }
     
-     /* Keep main footer items on one line */
-    .footer-content {
-        justify-content: space-evenly; /* Spreads items across the width */
-        flex-wrap: nowrap; /* Prevents wrapping to new lines */
-        gap: 20px; /* Smaller gap for mobile */
-        margin-bottom: 10px;
-    }
-    
-    /* Smaller text on mobile to fit better */
-    .call-us-text {
-        font-size: 0.8rem;
-    }
-    
-    .email-text {
-        font-size: 0.9rem;
-    }
-    
-    .facebook button {
-        font-size: 0.8rem;
-        padding: 5px 10px;
-    }
-    
-    /* Copyright stays below on mobile */
-    .copyright {
-        font-size: 0.7rem;
-        padding-top: 10px;
-    }
-    
-    .credit-text {
-        font-size: 0.5rem;
-    }
+ 
 }
 
 
@@ -168,38 +99,24 @@
    ============================================ */
 
 @media (max-width: 480px) {
-    /* Even tighter header spacing */
-    header {
-        padding: 0.6vh;
-    }
-    
-    /* Minimal gaps for tiny screens */
-    .nav-left,
-    .nav-right {
-        gap: 1.5rem;
-    }
-    
-    /* Very small logo for tiny screens */
-    .front-page-logo {
-        height: 5.5vh;
-        max-width: 100%;
-    }
-    
-    /* Minimal margins for nav items */
-    header nav ul li {
-        margin: 0 0.35rem;
-    }
-    
-    /* Small font for tiny screens */
-    header nav ul li a {
-        font-size: 1rem;
-    }
-    
+
     /* Shorter banner on small phones */
     .banner-pic {
-        height: 40vh;
+        height: 42vh;
+    }
+
+     /* Adjust banner title position */
+    .pic-title {
+        top: 33%;
+        font-size: 2.6rem;
     }
     
+    /* Adjust banner date position */
+    .pic-title-date {
+        top: 60%;
+        padding: 0 1.5rem;
+    }
+
     /* Tighter padding for small phones */
     .fishing-charter-container {
         padding: 25px 10px;
@@ -211,34 +128,6 @@
     .captain-image {
         width: min(180px, 75vw);
         height: min(180px, 75vw);
-    }
-    
-    /* Even tighter footer spacing */
-    .footer-content {
-        gap: 20px;
-        justify-content: space-evenly;
-    }
-    
-    /* Smaller text for tiny screens */
-    .call-us-text {
-        font-size: 0.73rem;
-    }
-    
-    .email-text {
-        font-size: 0.83rem;
-    }
-    
-    .facebook button {
-        font-size: 0.73rem;
-        padding: 3px 0;
-    }
-
-    .copyright {
-        font-size: 0.55rem;
-    }
-
-    .credit-text {
-        font-size: 0.45rem;
     }
 }
 
