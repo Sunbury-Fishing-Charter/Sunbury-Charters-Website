@@ -272,53 +272,55 @@ header nav ul li a:hover {
      /* Even tighter header spacing */
     header {
         padding: 0.6vh;
+        justify-content: center;
     }
 
     .header-nav {
-        justify-content: space-evenly; /* Centers everything */
-        gap: 1rem;
-        padding: 0.2vh;
+        gap: 0.1rem;
+        padding: 0.1vh;
     }
     
     /* Minimal gaps for tiny screens */
     .nav-left,
     .nav-right {
-        gap: 1.5rem;
+        gap: 1rem;
     }
     
     /* Very small logo for tiny screens */
     .front-page-logo {
-        height: 6vh;
+        height: 6.5vh;
         max-width: 100%;
+        padding: 0.1rem;
     }
+
     
     /* Minimal margins for nav items */
     header nav ul li {
-        margin: 0 0.35rem;
+        margin: 0 0.3rem;
     }
     
     /* Small font for tiny screens */
     header nav ul li a {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
 
     /* Even tighter footer spacing */
     .footer-content {
-        gap: 20px;
-        justify-content: space-evenly;
+        gap: 23px;
+        justify-content: center;
     }
     
     /* Smaller text for tiny screens */
     .call-us-text {
-        font-size: 0.73rem;
+        font-size: 0.65rem;
     }
     
     .email-text {
-        font-size: 0.83rem;
+        font-size: 0.75rem;
     }
     
     .facebook button {
-        font-size: 0.73rem;
+        font-size: 0.65rem;
         padding: 3px 0;
     }
 
