@@ -50,8 +50,8 @@
     /* Keep navigation in one row */
      .header-nav {
         justify-content: center; /* Centers everything */
-        gap: 0.4rem;
-        padding: 0 0.3rem;
+        gap: 1.2rem;
+        padding: 0.1vh;
     }
 
     .nav-left {
@@ -65,12 +65,12 @@
     
     /* Adjust banner for mobile header size */
     .banner-pic {
-        height: 50vh;
+        height: 55vh;
     }
     
     /* Adjust banner title position */
     .pic-title {
-        top: 40%;
+        top: 45%;
         padding: 0 1.5rem;
         font-size: 2.5rem;
     }
@@ -170,29 +170,29 @@
 @media (max-width: 480px) {
     /* Even tighter header spacing */
     header {
-        padding: 0.8vh 0.2rem;
+        padding: 0.6vh;
     }
     
     /* Minimal gaps for tiny screens */
     .nav-left,
     .nav-right {
-        gap: 2rem;
+        gap: 1.5rem;
     }
     
     /* Very small logo for tiny screens */
     .front-page-logo {
-        height: 4vh;
-        max-width: 18vw;
+        height: 5.5vh;
+        max-width: 100%;
     }
     
     /* Minimal margins for nav items */
     header nav ul li {
-        margin: 0 0.15rem;
+        margin: 0 0.35rem;
     }
     
     /* Small font for tiny screens */
     header nav ul li a {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
     
     /* Shorter banner on small phones */
