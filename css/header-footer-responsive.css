@@ -101,6 +101,8 @@
     .front-page-logo {
         height: 6.5vh;
         padding: 0.1rem;
+        width: 100%;
+
     }
     
     header nav ul li {
@@ -160,6 +162,8 @@
     .front-page-logo {
         padding-left: 0.0rem;
         height: 5vh;
+        width: 100%;
+
     }
     
     header nav ul li {
@@ -199,7 +203,8 @@
     }
     
     .front-page-logo {
-        padding-left: 0.0rem;
+        padding-left: 0.6rem;
+        height: 5vh;
     }
     
     header nav ul li {
@@ -207,7 +212,7 @@
     }
 
     header nav ul li a {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     header nav ul li a:hover {
