@@ -3,80 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Trips</title>
-    <link rel="stylesheet" href="css/trips.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Trips - Sunbury Charters</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/contact-responsive.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/header-footer-responsive.css">
 </head>
 <body>
-   <header>>
-		<nav>
-			<ul>
-                <li><a href="../index.html">Home</a></li>
-				   <li><a href="/about.html">About</a></li>
-				   <li><a href="/trips.html">Trips</a></li>
-                   <a href="../index.html">
-                     <img src="/Images/placeholder.jpg" alt="Button Image">
-                   </a>
-			  
-                   <li><a href="/gallery.html">Gallery</a></li>
-				   <li><a href="/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+    
+    <!-- Navbar -->
+  <header>
+    <nav class="header-nav">
+      <!-- Left side of the nav bar -->
+      <ul class="nav-left">
+        <li><a class="about-item" href="/about.html">About</a></li>
+        <li class="trip-item"><a href="/trips.html">Trips</a></li>
+      </ul>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h2>Share Your Travel Adventures</h2>
-                <p>Plan, share, and discover amazing trips with friends and family.</p>
-                <button id="get-started">Get Started</button>
-            </div>
-        </section>
+      <!-- Logo in the middle of the navbar -->
+      <a href="/index.html" class="front-page-logo-link">
+        <img class="front-page-logo" src="/Images/placeholder.jpg" alt="Logo">
+      </a>
 
-        <section id="trips" class="trips-section">
-            <h2>Upcoming Trips</h2>
-            <div id="trips-container" class="trips-container">
-                <!-- Trips will be dynamically added here -->
-            </div>
-        </section>
+      <!-- Right side of the nav bar -->
+      <ul class="nav-right">
+        <li class="gallery-item"><a href="/gallery.html">Gallery</a></li>
+        <li class="contact-item"><a href="/contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section id="add-trip" class="add-trip-section">
-            <h2>Add a New Trip</h2>
-            <form id="add-trip-form">
-                <div class="form-group">
-                    <label for="trip-title">Trip Title:</label>
-                    <input type="text" id="trip-title" name="trip-title" required>
-                </div>
-                <div class="form-group">
-                    <label for="trip-destination">Destination:</label>
-                    <input type="text" id="trip-destination" name="trip-destination" required>
-                </div>
-                <div class="form-group">
-                    <label for="trip-date">Date:</label>
-                    <input type="date" id="trip-date" name="trip-date" required>
-                </div>
-                <div class="form-group">
-                    <label for="trip-description">Description:</label>
-                    <textarea id="trip-description" name="trip-description" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="trip-image">Image URL:</label>
-                    <input type="url" id="trip-image" name="trip-image">
-                </div>
-                <button type="submit">Add Trip</button>
-            </form>
-        </section>
 
-        <section id="about" class="about-section">
-            <h2>About Us</h2>
-            <p>We are a community of travel enthusiasts sharing our upcoming adventures. Join us and discover new places!</p>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Upcoming Trips. All rights reserved.</p>
-    </footer>
 
-    <script src="/js/trips.js"></script>
+
+
+
+
+
+
+
+
+
+
+  <!--Footer Section-->
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="facebook">
+            <a href="https://www.facebook.com/sunbury.charters" class="facebook-link" target="_blank">
+                <button>Check Out <br> Our Facebook</button>
+            </a>
+        </div>
+        
+        <div class="call-us">
+            <p class="call-us-text">Call Us Now! <br> (912) 321-3069</p>
+        </div>
+
+        <div class="email">
+            <p class="email-text">Sunburycharters@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- Copyright section below main content -->
+    <div class="copyright">
+        <p class="copyright-text">Copyright © 2025 All rights reserved.</p>
+        <p class="credit-text">Created by Logan Strickland <br> With Sunbury Charters LLC</p>
+    </div>
+  </footer>
+
+
+
 </body>
 </html>

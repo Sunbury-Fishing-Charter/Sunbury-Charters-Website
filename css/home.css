@@ -1,14 +1,4 @@
 /* ============================================
-   BASIC PAGE SETUP
-   ============================================ */
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-
-/* ============================================
    BANNER SECTION (BIG IMAGE AT TOP)
    ============================================ */
 
@@ -22,7 +12,7 @@ html, body {
 .banner-pic {
     position: relative;
     width: 100vw;
-    height: 60vh;
+    height: 65vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -44,7 +34,7 @@ html, body {
     left: 50%;
     top: 45%;
     transform: translateX(-50%);
-    color: #fff;
+    color: whitesmoke;
     text-shadow: 0 8px 20px rgba(0,0,0,0.7);
     text-align: center;
     font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
