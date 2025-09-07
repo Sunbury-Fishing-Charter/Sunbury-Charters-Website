@@ -1,0 +1,15 @@
+/* ============================================
+   EVEN SMALLER (428px and smaller)
+   ============================================ */
+   @media (max-width: 428px) {
+    
+    .map-section{
+        padding-left: 7px;
+        padding-right: 7px;
+
+    }
+
+    .map {
+        width: 100%;
+    }
+   }
