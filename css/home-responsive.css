@@ -18,6 +18,7 @@
 }
 
 
+
 /* ============================================
    MOBILE RESPONSIVE DESIGN
    (Screens smaller than 768px)
@@ -48,26 +49,16 @@
         flex-direction: row;
         gap: 0.5rem;
         padding: 1rem;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        /* Hide scrollbar but keep functionality */
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* Internet Explorer 10+ */
     }
     
-    .top-fishing-examples::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
-    }
     
     /* Fixed size photos for horizontal scrolling */
     .top-fishing-examples img {
-        flex: 0 0 auto; /* Don't grow or shrink */
+        flex: auto; /* Don't grow or shrink */
         width: 150px; /* Fixed width for consistency */
         height: 200px; /* Fixed height for consistency */
         object-fit: cover; /* Crop images to fit without distortion */
         border-radius: 8px;
-        scroll-snap-align: start;
     }
     
     /* Adjust main content container for mobile */
@@ -117,6 +108,24 @@
         padding: 0 1.5rem;
     }
 
+
+      /* Horizontal scrolling photos on mobile */
+    .top-fishing-examples {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .top-fishing-examples img {
+        flex: auto; /* Don't grow or shrink */
+        width: 105.75px; /* Fixed width for consistency */
+        height: 160px; /* Fixed height for consistency */
+        object-fit: cover; /* Crop images to fit without distortion */
+        border-radius: 8px;
+    }
+
+
     /* Tighter padding for small phones */
     .fishing-charter-container {
         padding: 25px 10px;
@@ -130,6 +139,33 @@
         height: min(180px, 75vw);
     }
 }
+
+/*===================================
+    SMALLER PHONE SCREENS
+    (Smaller than 400px)
+  ===================================*/
+
+@media (max-width: 400px) {
+    .top-fishing-examples {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0.7rem;
+    }
+    .top-fishing-examples img {
+        flex: auto; /* Don't grow or shrink */
+        width: 80px; /* Fixed width for consistency */
+        height: 145px; /* Fixed height for consistency */
+        object-fit: cover; /* Crop images to fit without distortion */
+        border-radius: 8px;
+    }
+}
+
+
+
+
+
+
 
 /* ============================================
    LARGE SCREEN OPTIMIZATION
