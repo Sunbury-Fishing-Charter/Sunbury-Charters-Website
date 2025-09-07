@@ -28,7 +28,6 @@ header {
     max-width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center; /* center the group, left/right sides will take equal space */
     position: relative;
     gap: 1rem;
     flex-wrap: nowrap; /* keep everything on one line */
@@ -40,34 +39,17 @@ header {
 .nav-right {
     display: flex;
     padding: 0.2rem;
-    margin-left: 0.5rem;
-    margin-right: 0.6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     flex: 1 1 0; /* let left and right take equal space */
     align-items: center;
 }
 
-/* left starts at left, right sticks to the right */
-.nav-left { justify-content: flex-start; }
-.nav-right { justify-content: flex-end; }
-
-/* Company logo in the header */
-.front-page-logo-link {
-    flex: 0 0 auto; /* don't grow or shrink */
-    display: block;
-    margin: 0 0.5rem;
-    text-align: center;
-    z-index: 2;
-}
 
 .front-page-logo {
-    height: 8vh;
+    height: 8.5vh;
     width: auto;
     display: block;
-}
-
-/* reduce spacing of individual nav items so they don't push the logo off center */
-header nav ul li {
-    margin: 0 0.8rem;
 }
 
 /* All navigation menu items */
@@ -77,12 +59,11 @@ header nav ul {
     align-items: center;
     list-style: none;
     margin: 0;
-    padding: 0;
 }
 
 /* Individual navigation items */
 header nav ul li {
-    margin: 0 1.5rem;
+    margin: 0 2rem;
 }
 
 /* Navigation link text styling */
@@ -91,7 +72,7 @@ header nav ul li a {
     text-decoration: none;
     font-size: 2rem;
     font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
-    transition: color 0.2s;
+    transition: color 0.4s;
 }
 
 /* Navigation link hover effect */
@@ -109,7 +90,7 @@ header nav ul li a:hover {
 .footer {
     background-color: #1a2733;
     color: white;
-    padding: 20px;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -136,7 +117,7 @@ header nav ul li a:hover {
     border: 0px #1a2733;
     padding: 6px 0;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
 }
 
 /* Phone number text */
@@ -144,6 +125,8 @@ header nav ul li a:hover {
     font-size: 1.2rem;
     margin: 0;
     white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+
 }
 
 /* Email text */
@@ -151,6 +134,8 @@ header nav ul li a:hover {
     font-size: 1.3rem;
     margin: 0;
     white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+
 }
 
 /* Hover effects */
@@ -174,214 +159,4 @@ header nav ul li a:hover {
     text-align: right;
     font-size: 0.5rem;
     margin: 5px 0 0 0;
-}
-
-
-
-/* ============================================
-   TABLET RESPONSIVE DESIGN
-   (Screens smaller than 1024px)
-   ============================================ */
-
-@media (max-width: 1024px) {
-    /* Make header navigation tighter */
-    .header-nav {
-        justify-content: space-between;
-        padding: 0 1rem;
-    }
-    
-    /* Reduce spacing between nav items */
-    .nav-left,
-    .nav-right {
-        gap: 1rem;
-    }
-    
-    /* Smaller margins for nav items */
-    header nav ul li {
-        margin: 0 0.8rem;
-    }
-    
-    /* Smaller font size for nav links */
-    header nav ul li a {
-        font-size: 1.2rem;
-    }
-}
-
-
-/* ============================================
-   MOBILE RESPONSIVE DESIGN
-   (Screens smaller than 768px)
-   ============================================ */
-
-@media (max-width: 768px) {
-    
-    /* Keep navigation in one row */
-     .header-nav {
-        padding: 0.6rem 0.8rem;
-    }
-
-    .nav-left {
-        margin-right: 0.5rem; /* Push slightly right */
-    }
-
-     .nav-right {
-        margin-left: 0.5rem; /* Push slightly left */
-     }
-
-      /* Minimal gaps for tiny screens */
-    .nav-left,
-    .nav-right {
-        gap: 1.8rem;
-    }
-    
-    /* Very small logo for tiny screens */
-    .front-page-logo {
-        height: 6.2vh;
-        max-height: 48px;
-    }
-    
-    /* Minimal margins for nav items */
-    header nav ul li {
-        margin: 0 0.6rem;
-    }
-    
-    /* Small font for tiny screens */
-    header nav ul li a {
-        font-size: 1rem;
-    }
-
-     /* Keep main footer items on one line */
-    .footer-content {
-        justify-content: space-evenly; /* Spreads items across the width */
-        flex-wrap: nowrap; /* Prevents wrapping to new lines */
-        gap: 30px; /* Smaller gap for mobile */
-        margin-bottom: 10px;
-    }
-    
-    /* Smaller text on mobile to fit better */
-    .call-us-text {
-        font-size: 0.8rem;
-    }
-    
-    .email-text {
-        font-size: 0.9rem;
-    }
-    
-    .facebook button {
-        font-size: 0.8rem;
-    }
-    
-    /* Copyright stays below on mobile */
-    .copyright {
-        font-size: 0.7rem;
-        padding-top: 10px;
-    }
-    
-    .credit-text {
-        font-size: 0.5rem;
-    }
-}
-
-
-/* ============================================
-   SMALL MOBILE RESPONSIVE DESIGN
-   (Screens smaller than 480px)
-   ============================================ */
-
-@media (max-width: 480px) {
-     /* Even tighter header spacing */
-    header {
-        padding: 0.6vh;
-        justify-content: center;
-    }
-
-    .header-nav {
-        gap: 0.1rem;
-        padding: 0.1vh;
-    }
-    
-    /* Minimal gaps for tiny screens */
-    .nav-left,
-    .nav-right {
-        gap: 1rem;
-    }
-    
-    /* Very small logo for tiny screens */
-    .front-page-logo {
-        height: 6.5vh;
-        max-width: 100%;
-        padding: 0.1rem;
-    }
-
-    
-    /* Minimal margins for nav items */
-    header nav ul li {
-        margin: 0 0.3rem;
-    }
-    
-    /* Small font for tiny screens */
-    header nav ul li a {
-        font-size: 1rem;
-    }
-
-    /* Even tighter footer spacing */
-    .footer-content {
-        gap: 23px;
-        justify-content: center;
-    }
-    
-    /* Smaller text for tiny screens */
-    .call-us-text {
-        font-size: 0.65rem;
-    }
-    
-    .email-text {
-        font-size: 0.75rem;
-    }
-    
-    .facebook button {
-        font-size: 0.65rem;
-        padding: 3px 0;
-    }
-
-    .copyright {
-        font-size: 0.55rem;
-    }
-
-    .credit-text {
-        font-size: 0.45rem;
-    }
-}
-
-
-/*===================================
-    SMALLER PHONE SCREENS
-    (Smaller than 400px)
-  ===================================*/
-@media (max-width: 400px) {
-    header {
-        padding: 0.5rem;
-        
-    }
-
-    .header-nav {
-        padding: 0.1rem;
-        gap: 0.6rem;
-    }
-
-    .nav-left,
-    .nav-right {
-        gap: 0.5rem;
-    }
-
-    .front-page-logo {
-        height: 6.5vh;
-        max-width: 100%;
-        padding-left: 8vw;
-    }
-/* Minimal margins for nav items */
-    header nav ul li {
-        margin: 0 0.4rem;
-    }
-    
 }
