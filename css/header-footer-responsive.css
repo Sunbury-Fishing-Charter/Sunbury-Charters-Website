@@ -17,7 +17,7 @@
     }
     .front-page-logo {
         height: 7vh;
-        width: 100%;
+        width: auto;
     }
 }
 
@@ -42,6 +42,8 @@
     
     .front-page-logo {
         height: 7.5vh;
+        width: auto;
+
     }
     
     header nav ul li {
@@ -101,7 +103,7 @@
     .front-page-logo {
         height: 6.5vh;
         padding: 0.1rem;
-        width: 100%;
+        width: auto;
 
     }
     
@@ -145,40 +147,112 @@
    ============================================ */
    @media (max-width: 428px) {
     header {
-        padding: 0.4rem;
+        padding: 0.6vh;
     }
     
     .header-nav {
-        padding: 0.0rem;
-        gap: 0.5rem;
-        
-    }
-    
-    .nav-left,
-    .nav-right {
         gap: 1rem;
+        padding: 0.1vh;
     }
     
     .front-page-logo {
-        padding-left: 0.0rem;
-        height: 5vh;
-        width: 100%;
+        height: 6vh;
+        padding-left: 0.2rem;
+        width: auto;
 
     }
     
     header nav ul li {
-        margin: 0 0.0rem;
+        margin: 0 0.3rem;
     }
 
     header nav ul li a {
         font-size: 1rem;
     }
 
-    header nav ul li a:hover {
-    color: #ffb347;
-}
+    /* Footer adjustments */
+    .footer-content {
+        gap: 45px;
+        justify-content: center;
+    }
+    
+    .call-us-text {
+        font-size: 0.7rem;
+    }
+    
+    .email-text {
+        font-size: 0.85rem;
+    }
+    
+    .facebook button {
+        font-size: 0.7rem;
+        padding: 3px 0;
+    }
+    
+    .copyright {
+        font-size: 0.6rem;
+    }
+    
+    .credit-text {
+        font-size: 0.45rem;
+    }
 }
 
+/* ============================================
+   YET SMALLER (414px and smaller)
+   ============================================ */
+   @media (max-width: 415px) {
+    header {
+        padding: 0.5vh;
+    }
+    
+    .header-nav {
+        gap: 0.0rem;
+        padding: 0.0vh;
+    }
+    
+    .front-page-logo {
+        height: 5vh;
+        padding-left: 0.2rem;
+        width: auto;
+
+    }
+    
+    header nav ul li {
+        margin: 0 0.3rem;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    /* Footer adjustments */
+    .footer-content {
+        gap: 30px;
+        justify-content: center;
+    }
+    
+    .call-us-text {
+        font-size: 0.7rem;
+    }
+    
+    .email-text {
+        font-size: 0.85rem;
+    }
+    
+    .facebook button {
+        font-size: 0.7rem;
+        padding: 3px 0;
+    }
+    
+    .copyright {
+        font-size: 0.6rem;
+    }
+    
+    .credit-text {
+        font-size: 0.45rem;
+    }
+   }
 
 
 
@@ -187,35 +261,54 @@
    ============================================ */
 
 @media (max-width: 400px) {
-    header {
-        padding: 0.4rem;
+        header {
+        padding: 0.5vh;
     }
     
     .header-nav {
-        padding: 0.0rem;
-        gap: 0.5rem;
-        
-    }
-    
-    .nav-left,
-    .nav-right {
-        gap: 1rem;
+        gap: 0.0rem;
+        padding: 0.0vh;
     }
     
     .front-page-logo {
-        padding-left: 0.6rem;
         height: 5vh;
+        padding-left: 0.1rem;
+        width: auto;
+
     }
     
     header nav ul li {
-        margin: 0 0.0rem;
+        margin: 0 0.2rem;
     }
 
     header nav ul li a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-    header nav ul li a:hover {
-    color: #ffb347;
-}
-}
+    /* Footer adjustments */
+    .footer-content {
+        gap: 30px;
+        justify-content: center;
+    }
+    
+    .call-us-text {
+        font-size: 0.6rem;
+    }
+    
+    .email-text {
+        font-size: 0.75rem;
+    }
+    
+    .facebook button {
+        font-size: 0.6rem;
+        padding: 3px 0;
+    }
+    
+    .copyright {
+        font-size: 0.6rem;
+    }
+    
+    .credit-text {
+        font-size: 0.45rem;
+    }
+   }
