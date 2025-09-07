@@ -28,24 +28,46 @@ header {
     max-width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center; /* center the group, left/right sides will take equal space */
+    position: relative;
+    gap: 1rem;
+    flex-wrap: nowrap; /* keep everything on one line */
 }
 
+/* Navigation links on left and right sides */
 /* Navigation links on left and right sides */
 .nav-left,
 .nav-right {
     display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.6rem;
+    flex: 1 1 0; /* let left and right take equal space */
+    align-items: center;
 }
 
+/* left starts at left, right sticks to the right */
+.nav-left { justify-content: flex-start; }
+.nav-right { justify-content: flex-end; }
+
 /* Company logo in the header */
+.front-page-logo-link {
+    flex: 0 0 auto; /* don't grow or shrink */
+    display: block;
+    margin: 0 0.5rem;
+    text-align: center;
+    z-index: 2;
+}
+
 .front-page-logo {
-    height: 7.5vh;
+    height: 8vh;
     width: auto;
-    padding-top: 0.3vh;
+    display: block;
+}
+
+/* reduce spacing of individual nav items so they don't push the logo off center */
+header nav ul li {
+    margin: 0 0.8rem;
 }
 
 /* All navigation menu items */
@@ -67,7 +89,7 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
     transition: color 0.2s;
 }
@@ -195,9 +217,7 @@ header nav ul li a:hover {
     
     /* Keep navigation in one row */
      .header-nav {
-        justify-content: space-evenly; /* Centers everything */
-        gap: 1.2rem;
-        padding: 0.1vh;
+        padding: 0.6rem 0.8rem;
     }
 
     .nav-left {
@@ -216,13 +236,13 @@ header nav ul li a:hover {
     
     /* Very small logo for tiny screens */
     .front-page-logo {
-        height: 7.5vh;
-        max-width: 100%;
+        height: 6.2vh;
+        max-height: 48px;
     }
     
     /* Minimal margins for nav items */
     header nav ul li {
-        margin: 0.25rem;
+        margin: 0 0.6rem;
     }
     
     /* Small font for tiny screens */
@@ -333,3 +353,35 @@ header nav ul li a:hover {
     }
 }
 
+
+/*===================================
+    SMALLER PHONE SCREENS
+    (Smaller than 400px)
+  ===================================*/
+@media (max-width: 400px) {
+    header {
+        padding: 0.5rem;
+        
+    }
+
+    .header-nav {
+        padding: 0.1rem;
+        gap: 0.6rem;
+    }
+
+    .nav-left,
+    .nav-right {
+        gap: 0.5rem;
+    }
+
+    .front-page-logo {
+        height: 6.5vh;
+        max-width: 100%;
+        padding-left: 8vw;
+    }
+/* Minimal margins for nav items */
+    header nav ul li {
+        margin: 0 0.4rem;
+    }
+    
+}
