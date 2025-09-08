@@ -22,10 +22,28 @@
         padding-left: 7px;
         padding-right: 7px;
         width: 100%;
-
     }
 
     .map {
         width: 100%;
     }
    }
+
+   /* ============================================
+   LARGE SCREEN OPTIMIZATION
+   (Screens bigger than 1200px - big desktops)
+   ============================================ */
+
+@media (min-width: 1200px) {
+    /* More spacing for large screens */
+    .map-section {
+        padding-left: 7px;       
+        padding-right: 7px;
+        width: 205%;
+    }
+    
+    /* Bigger photos for large screens */
+    .map {
+        width: 100%;
+    }
+}

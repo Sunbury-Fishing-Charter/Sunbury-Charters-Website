@@ -17,12 +17,10 @@
     }
 }
 
-
-
 /* ============================================
    MOBILE RESPONSIVE DESIGN
    (Screens smaller than 768px)
-   ============================================ */
+=========================================== */
 
 @media (max-width: 768px) {
 
@@ -140,6 +138,32 @@
     }
 }
 
+
+/*===================================
+    SMALLER PHONE SCREENS
+    (Smaller than 431px)
+  ===================================*/
+  @media (max-width: 431px) {
+    .top-fishing-examples {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0.7rem;
+    }
+    .top-fishing-examples img {
+        flex: auto; /* Don't grow or shrink */
+        width: 90px; /* Fixed width for consistency */
+        height: 145px; /* Fixed height for consistency */
+        object-fit: cover; /* Crop images to fit without distortion */
+        border-radius: 8px;
+    }
+
+  }
+
+
+
+
+
 /*===================================
     SMALLER PHONE SCREENS
     (Smaller than 400px)
@@ -154,7 +178,7 @@
     }
     .top-fishing-examples img {
         flex: auto; /* Don't grow or shrink */
-        width: 80px; /* Fixed width for consistency */
+        width: 78.4px; /* Fixed width for consistency */
         height: 145px; /* Fixed height for consistency */
         object-fit: cover; /* Crop images to fit without distortion */
         border-radius: 8px;
