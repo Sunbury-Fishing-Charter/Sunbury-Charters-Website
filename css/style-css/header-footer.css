@@ -166,6 +166,7 @@ header nav ul li a:hover {
 
 .credit-text {
     text-align: right;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     margin: 5px 0 0 0;
+    letter-spacing: 0.01rem;
 }

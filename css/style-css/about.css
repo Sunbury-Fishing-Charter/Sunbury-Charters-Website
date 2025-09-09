@@ -1,0 +1,20 @@
+/* ============================================
+   BASIC PAGE SETUP
+   ============================================ */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.our-story {
+    margin-top: 9rem;
+    text-align: center;
+}
+
+.meet-our-captain {
+    margin-top: 3rem;
+    text-align: center;
+    background-color: #f8f5f2;
+
+}
