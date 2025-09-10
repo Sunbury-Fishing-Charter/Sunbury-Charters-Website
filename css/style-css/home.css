@@ -40,7 +40,7 @@ html, body {
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 45%;
+    top: 43%;
     transform: translateX(-50%);
     color: whitesmoke;
     text-shadow: 0 8px 20px rgba(0,0,0,0.7);
@@ -51,7 +51,7 @@ html, body {
     font-variant: small-caps;
     font-weight: bold;
     font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
-    font-size: clamp(2rem, 7vw, 4.5rem);
+    font-size: 5vw;
     letter-spacing: 2.5px;
     padding: 0 1rem;
 }
@@ -91,8 +91,8 @@ html, body {
 
 /* Individual fishing photos */
 .top-fishing-examples img {
-    width: min(320px, 90vw);
-    height: 380px;
+    width: 23vw;
+    height: 650px;
     max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
