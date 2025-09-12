@@ -1,7 +1,37 @@
-/* ============================================
-   BASIC PAGE SETUP
-   ============================================ */
-html, body {
-  margin: 0;
-  padding: 0;
+/*------------------------------------
+ SCREENS SMALLER THAN 400px
+-------------------------------------- */
+@media (max-width: 400px) {
+  .our-story {
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+.story-header {
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 2.3rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  font-variant: small-caps;
+  margin-bottom: 2rem;
+}
+.story-text {
+  font-size: 1.3rem;
+  padding: 1rem;
+  line-height: 1.3;
+}
+
+}
+
+/*------------------------------------
+ SCREENS SMALLER THAN 380px
+-------------------------------------- */
+@media (max-width: 380px) {
+  
 }

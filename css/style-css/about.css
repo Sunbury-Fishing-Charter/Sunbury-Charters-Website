@@ -1,11 +1,12 @@
-/* ============================================
-   BASIC PAGE SETUP
-   ============================================ */
+/*------------------------------------
+  BASIC PAGE SETUP SECTION
+-------------------------------------- */
 html, body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #f4f7fa 0%, #e8f1f8 100%);
+  background: linear-gradient(135deg, #f4f7fa 0%, #e8f4f8 100%);
 }
+
 
 /*------------------------------------
   OUR STORY SECTION
@@ -15,11 +16,10 @@ html, body {
   margin: 0 auto;
   max-width: 1100px;
   padding-top: 8rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
-
-
 .story-header {
+  letter-spacing: 0.5px;
   text-align: center;
   padding-top: 1rem;
   font-size: 2.8rem;
@@ -31,10 +31,10 @@ html, body {
   font-variant: small-caps;
   margin-bottom: 2rem;
 }
-
 .story-text {
   font-size: 1.3rem;
   padding: 1rem;
+  line-height: 1.6;
 }
 
 
@@ -42,10 +42,13 @@ html, body {
   MEET OUR CAPTAIN SECTION
 -------------------------------------- */
 .meet-our-captain {
+  box-shadow: 
+  0 2px 10px rgba(0,0,0,0.1),
+  0 8px 40px rgba(0,0,0,0.05);
   margin-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   text-align: center;
-  background-color: #f8f5f2;
+  background: #f8fbff;
 }
 .content-wrapper {
   display: flex;
@@ -54,6 +57,7 @@ html, body {
   text-align: left;
 }
 .heading {
+  letter-spacing: 0.5px;
   padding-top: 2rem;
   font-size: 2.8rem;
   color: #2c3e50;
@@ -65,30 +69,34 @@ html, body {
 }
 .captain-name {
   font-size: 2.2rem;
+  padding-left: 2rem;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   margin-bottom: 0.3rem;
 }
 .captain-title {
+  padding-left: 2rem;
   font-style: italic;
   font-size: 1.1rem;
   margin-bottom: 2rem;
 
 }
 .captain-description {
+  padding-left: 2rem;
   max-width: 950px;
+  line-height: 1.6;
   font-size: 1.2rem;
 }
 .credentials-list {
+  padding-left: 3rem;
   font-size: 1.2rem;
-  line-height: 2rem;
-
+  line-height: 1.8rem;
 }
 .captain-image {
   width: auto;
   height: 45vh;
-  border-radius: 50%;
+  border-radius: 30px;
   object-fit: cover;
-  border: 4px solid #e8e8e8;
+  border: 4px solid #d0d0d0;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   margin-left: 3rem;
 }
@@ -101,10 +109,10 @@ html, body {
   text-align: left;
   margin: 0 auto;
   max-width: 1100px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
 .mission-header {
+  letter-spacing: 0.5px;
   text-align: center;
   font-size: 2.8rem;
   color: #2c3e50;
@@ -117,6 +125,7 @@ html, body {
 }
 .mission-text {
   font-size: 1.2rem;
+  line-height: 1.6;
   margin-bottom: 2.5rem;
 
 }
@@ -131,12 +140,20 @@ html, body {
   font-size: 1.2rem;
 }
 
+
+/*------------------------------------
+ NOTABLE ACHIEVEMENTS SECTION
+-------------------------------------- */
 .achievements {
-  background-color: #f8f5f2;
+  box-shadow: 
+  0 2px 10px rgba(0,0,0,0.1),
+  0 8px 40px rgba(0,0,0,0.05);
+  background-color: #f8fbff;
   text-align: left;
   margin: 0 auto;
-}
+  padding-bottom: 4rem;
 
+}
 .achievements-header {
   text-align: center;
   font-size: 2.8rem;
@@ -148,13 +165,81 @@ html, body {
   font-variant: small-caps;
   margin-bottom: 2rem;
 }
-
 .achievements-container {
   display: flex;
   justify-content: center;
 }
-
 .achievements-list {
   font-size: 1.2rem;
   line-height: 2.5rem;
+}
+
+
+/*------------------------------------
+  NEXT STEPS SECTION
+-------------------------------------- */
+.next-step {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+.next-step-header {
+  letter-spacing: 0.5px;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  font-variant: small-caps;
+  margin-bottom: 2rem;
+}
+.next-step-container {
+  max-width: 950px;
+  min-height: 20rem; /* Instead of fixed height */
+  height: auto;  margin: 0 auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 1vh;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.button-txt-content {
+  display: flex;
+  padding-top: 3rem;
+  justify-content: space-evenly;
+}
+.button-txt-content p {
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.button-txt-content a {
+  display: inline-block;
+  padding: 20px 34px;
+  background-color: #1e3a5f;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.left:hover {
+  background-color: #2a4a6b;
+  transform: translateY(-2px);
+
+}
+.right:hover {
+  background-color: #2a4a6b;
+  transform: translateY(-2px);
 }

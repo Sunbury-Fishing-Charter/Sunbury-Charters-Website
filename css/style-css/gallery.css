@@ -1,16 +1,15 @@
-/* ============================================
-   BASIC PAGE SETUP
-   ============================================ */
+/*------------------------------------
+BASIC PAGE SETUP
+-------------------------------------- */
 html, body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #f4f7fa 0%, #e8f1f8 100%);
 }
 
-
-
-
-
+/*------------------------------------
+  INTRODUCTION SECTION
+-------------------------------------- */
 .intro {
     display: flex;
     justify-content: center;
@@ -20,9 +19,7 @@ html, body {
     padding: 2.5rem 2rem;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     text-align: center;
-
 }
-
 .content h1 {
     text-align: center;
     font-size: clamp(2.5rem, 5vw, 3.5rem);
@@ -30,9 +27,7 @@ html, body {
     margin-bottom: 1rem;
     font-weight: bold;
     font-family: 'Georgia', serif;
-
 }
-
 .content p {
     text-align: center;
     font-size: clamp(1.1rem, 2.5vw, 1.3rem);
@@ -42,16 +37,17 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-
 }
 
+
+/*------------------------------------
+PHOTO GRID SECTION
+-------------------------------------- */
 .photo-gallery {
     margin-top: 2rem;
     background-color: white;
     background: linear-gradient(135deg, #f4f7fa 0%, #e8f1f8 100%);
-
 }
-
 .photo-grid {
     display: flex;
     justify-content: left;
@@ -62,7 +58,6 @@ html, body {
     padding-bottom: 2.7%;
     margin-left: 3%;
 }
-
 .photo-grid img {
     width: min(350px);
     height: 450px;
@@ -70,5 +65,4 @@ html, body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     object-fit: cover;
-    
 }
