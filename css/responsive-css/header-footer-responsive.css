@@ -1,410 +1,80 @@
-/*=============================================
-   (Screens smaller than 1480px)
-=============================================== */
-@media (max-width: 1480px) {
-     /* Header Adjustments */    
-    .header-nav {
-        padding: 0 1rem;
-    }
-    
-    header nav ul li {
-        margin: 0 0.8rem;
-    }
-    
-    header nav ul li a {
-        font-size: 2.10rem;
-    }
-    .front-page-logo {
-        height: 11vh;
-        width: auto;
-    }
-
-
- /* Footer adjustments */
-    .footer-content {
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        gap: 30px;
-        margin-bottom: 10px;
-    }
-    
-    .call-us-text {
-        font-size: 1.5rem;
-    }
-    
-    .email-text {
-        font-size: 1.8rem;
-    }
-    
-    .facebook button {
-        padding-top: 2px;
-        font-size: 1.45rem;
-    }
-    
-    .copyright {
-        font-size: 0.9rem;
-    }
-    
-    .credit-text {
-        font-size: 0.75rem;
-    }
+/*------------------------------------
+BASIC PAGE SETUP
+-------------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-/*=============================================
-   (Screens smaller than 1300px)
-=============================================== */
-@media (max-width: 1300px) {
-
- /* Header Adjustments */    
-    .header-nav {
-        padding: 0 1rem;
-    }
-    
-    header nav ul li {
-        margin: 0 0.8rem;
-    }
-    
-    header nav ul li a {
-        font-size: 1.7rem;
-    }
-    .front-page-logo {
-        height: 9vh;
-        width: auto;
-    }
-
-
- /* Footer adjustments */
-    .footer-content {
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        gap: 30px;
-        margin-bottom: 10px;
-    }
-    
-    .call-us-text {
-        font-size: 1.25rem;
-    }
-    
-    .email-text {
-        font-size: 1.7rem;
-    }
-    
-    .facebook button {
-        padding-top: 2px;
-        font-size: 1.25rem;
-    }
-    
-    .copyright {
-        font-size: 0.7rem;
-    }
-    
-    .credit-text {
-        font-size: 0.6rem;
-    }
-}
-
-/* ============================================
-   (Screens smaller than 1024px)
-=============================================== */
-@media (max-width: 1024px) {
-    .header-nav {
-        padding: 0 1rem;
-    }
-    
-    header nav ul li {
-        margin: 0 0.8rem;
-    }
-    
-    header nav ul li a {
-        font-size: 1.5rem;
-    }
-    .front-page-logo {
-        height: 7vh;
-        width: auto;
-    }
-}
-
-/* ============================================
-   (Screens smaller than 768px)
-=============================================== */
-@media (max-width: 768px) {
-    .header-nav {
-        padding: 0.2rem 0.8rem;
-        gap: 1.6rem;
-    }
-    
-    .nav-left {
-        margin-right: 0.5rem;
-    }
-    
-    .nav-right {
-        margin-left: 1rem;
-    }
-    
-    .front-page-logo {
-        height: 7.5vh;
-        width: auto;
-
-    }
-    
-    header nav ul li {
-        margin: 0 0.6rem;
-    }
-    
-    header nav ul li a {
-        font-size: 1.6rem;
-    }
-
-
-    
-    /* Footer adjustments */
-    .footer-content {
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        gap: 30px;
-        margin-bottom: 10px;
-    }
-    
-    .call-us-text {
-        font-size: 0.8rem;
-    }
-    
-    .email-text {
-        font-size: 0.9rem;
-    }
-    
-    .facebook button {
-        font-size: 0.8rem;
-    }
-    
-    .copyright {
-        font-size: 0.7rem;
-    }
-    
-    .credit-text {
-        font-size: 0.6rem;
-    }
-}
-
-/* =============================================
-   (Screens smaller than 480px)
-================================================ */
-@media (max-width: 480px) {
-    header {
-        padding: 0.6vh;
-    }
-    
-    .header-nav {
-        gap: 1rem;
-        padding: 0.1vh;
-    }
-    
-    .front-page-logo {
-        height: 6.5vh;
-        padding: 0.1rem;
-        width: auto;
-
-    }
-    
-    header nav ul li {
-        margin: 0 0.3rem;
-    }
-    
-    /* Footer adjustments */
-    .footer-content {
-        gap: 23px;
-        justify-content: center;
-    }
-    
-    .call-us-text {
-        font-size: 0.65rem;
-    }
-    
-    .email-text {
-        font-size: 0.75rem;
-    }
-    
-    .facebook button {
-        font-size: 0.65rem;
-        padding: 3px 0;
-    }
-    
-    .copyright {
-        font-size: 0.55rem;
-    }
-    
-    .credit-text {
-        font-size: 0.5rem;
-    }
-    header nav ul li a {
-        font-size: 1.1rem;
-    }
-}
-
-/* =============================================
-    (Screens smaller than 428px)
-================================================ */
-   @media (max-width: 428px) {
-    header {
-        padding: 0.6vh;
-    }
-    
-    .header-nav {
-        gap: 1rem;
-        padding: 0.1vh;
-    }
-    
-    .front-page-logo {
-        height: 6vh;
-        padding-left: 0.2rem;
-        width: auto;
-
-    }
-    
-    header nav ul li {
-        margin: 0 0.3rem;
-    }
-
-    header nav ul li a {
-        font-size: 1rem;
-    }
-
-    /* Footer adjustments */
-    .footer-content {
-        gap: 45px;
-        justify-content: center;
-    }
-    
-    .call-us-text {
-        font-size: 0.7rem;
-    }
-    
-    .email-text {
-        font-size: 0.85rem;
-    }
-    
-    .facebook button {
-        font-size: 0.7rem;
-        padding: 3px 0;
-    }
-    
-    .copyright {
-        font-size: 0.6rem;
-    }
-    
-    .credit-text {
-        font-size: 0.5rem;
-    }
-}
-
-/* ==============================================
-   (Screens 414px and smaller)
-================================================= */
-   @media (max-width: 414px) {
-    header {
-        padding: 0.5vh;
-    }
-    
-    .header-nav {
-        gap: 0.0rem;
-        padding: 0.0vh;
-    }
-    
-    .front-page-logo {
-        height: 5vh;
-        padding-left: 0.2rem;
-        width: auto;
-
-    }
-    
-    header nav ul li {
-        margin: 0 0.3rem;
-    }
-
-    header nav ul li a {
-        font-size: 1rem;
-    }
-
-    /* Footer adjustments */
-    .footer-content {
-        gap: 30px;
-        justify-content: center;
-    }
-    
-    .call-us-text {
-        font-size: 0.7rem;
-    }
-    
-    .email-text {
-        font-size: 0.85rem;
-    }
-    
-    .facebook button {
-        font-size: 0.7rem;
-        padding: 3px 0;
-    }
-    
-    .copyright {
-        font-size: 0.6rem;
-    }
-    
-    .credit-text {
-        font-size: 0.5rem;
-    }
-   }
-
-/* ============================================
-    Screens 400px and smaller)
-=============================================== */
+/*------------------------------------
+SCREENS SMALLER THAN 400px
+-------------------------------------- */
 @media (max-width: 400px) {
-        header {
-        padding: 0.5vh;
-    }
-    
-    .header-nav {
-        gap: 0.0rem;
-        padding: 0.0vh;
-    }
-    
-    .front-page-logo {
-        height: 5vh;
-        padding-left: 0.1rem;
-        width: auto;
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0.0rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0.6rem;
+}
+.front-page-logo {
+    height: 7vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 0.2rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 0.95rem;
+}
 
-    }
-    
-    header nav ul li {
-        margin: 0 0.2rem;
-    }
-
-    header nav ul li a {
-        font-size: 1rem;
-    }
-
-    /* Footer adjustments */
-    .footer-content {
-        gap: 30px;
-        justify-content: center;
-    }
-    
-    .call-us-text {
-        font-size: 0.6rem;
-    }
-    
-    .email-text {
-        font-size: 0.75rem;
-    }
-    
-    .facebook button {
-        font-size: 0.6rem;
-        padding: 3px 0;
-    }
-    
-    .copyright {
-        font-size: 0.6rem;
-    }
-    
-    .credit-text {
-        font-size: 0.5rem;
-    }
-   }
+/* Main footer container */
+.footer {
+    padding: 0.7rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 0.75rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 0.75rem;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 0.87rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.58rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.5rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}

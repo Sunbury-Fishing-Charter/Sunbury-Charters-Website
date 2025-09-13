@@ -820,24 +820,20 @@
     (Screens smaller than 400px)
 ================================================= */
 @media (max-width: 400px) {
-
     .banner-pic  {
-        height: 30vh;
+        height: 40vh;
     }
     .pic-title {
-        top: 7.3rem;
-        font-size: 1.57rem;
+        top: 10.3rem;
+        font-size: 1.6rem;
     }
     .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
         gap: 0.5rem;
         padding: 0.7rem;
     }
     .top-fishing-examples img {
-        flex: auto;
-        width: 21.9vw;
-        height: 20vh;
+        width: 21.95vw;
+        height: 23vh;
         object-fit: cover;
         border-radius: 8px;
     }

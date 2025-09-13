@@ -1,4 +1,3 @@
-
 /* ============================================
    BASIC PAGE SETUP
    ============================================ */
@@ -22,7 +21,6 @@ header {
     box-sizing: border-box;
     padding: 1.5vh 2rem;
 }
-
 .header-nav {
     width: 100%;
     max-width: 100vw;
@@ -33,7 +31,6 @@ header {
     gap: 1rem;
     flex-wrap: nowrap; /* keep everything on one line */
 }
-
 /* Navigation links on left and right sides */
 /* Navigation links on left and right sides */
 .nav-left,
@@ -46,7 +43,6 @@ header {
     flex: 1 1 0; /* let left and right take equal space */
     align-items: center;
 }
-
 .front-page-logo-link {
     flex: 0 0 auto; /* don't grow or shrink */
     display: block;
@@ -54,13 +50,11 @@ header {
     text-align: center;
     z-index: 2;
 }
-
 .front-page-logo {
     height: 9vh;
     width: auto;
     display: block;
 }
-
 /* All navigation menu items */
 header nav ul {
     display: flex;
@@ -69,12 +63,10 @@ header nav ul {
     list-style: none;
     margin: 0;
 }
-
 /* Individual navigation items */
 header nav ul li {
     margin: 0 0.8rem;
 }
-
 /* Navigation link text styling */
 header nav ul li a {
     color: #fff;
@@ -83,18 +75,15 @@ header nav ul li a {
     font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
     transition: color 0.4s;
 }
-
 /* Navigation link hover effect */
 header nav ul li a:hover {
     color: #ffb347;
 }
 
 
-
 /* ============================================
    FOOTER SECTION
    ============================================ */
-
 /* Main footer container */
 .footer {
     background-color: #1a2733;
@@ -102,7 +91,6 @@ header nav ul li a:hover {
     padding: 1rem;
     text-align: center;
 }
-
 /* Footer content wrapper - keeps main items on one line */
 .footer-content {
     display: flex;
@@ -112,12 +100,10 @@ header nav ul li a:hover {
     gap: 15px;
     margin-bottom: 20px;
 }
-
 /* Facebook section in footer */
 .facebook {
     padding-top: 5px;
 }
-
 /* Facebook button styling */
 .facebook button {
     font-size: 1.2rem;
@@ -128,32 +114,26 @@ header nav ul li a:hover {
     cursor: pointer;
     transition: color 0.4s ease;
 }
-
 /* Phone number text */
 .call-us-text {
     font-size: 1.2rem;
     margin: 0;
     white-space: nowrap; /* Prevents text wrapping */
     transition: color 0.4s ease;
-
 }
-
 /* Email text */
 .email-text {
     font-size: 1.3rem;
     margin: 0;
     white-space: nowrap; /* Prevents text wrapping */
     transition: color 0.4s ease;
-
 }
-
 /* Hover effects */
 .call-us-text:hover,
 .facebook button:hover,
 .email-text:hover {
     color: #ffb347;
 }
-
 /* Copyright section - always goes below main content */
 .copyright {
     width: 100%;
@@ -163,7 +143,6 @@ header nav ul li a:hover {
     border-top: 1px solid #2a3744;
     color: #ccc;
 }
-
 .credit-text {
     text-align: right;
     font-size: 0.6rem;
