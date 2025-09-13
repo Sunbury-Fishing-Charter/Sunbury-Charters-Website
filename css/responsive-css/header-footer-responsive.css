@@ -6,6 +6,821 @@ html, body {
   padding: 0;
 }
 
+
+/*------------------------------------
+SCREENS SMALLER THAN 1280px
+-------------------------------------- */
+@media (max-width: 1280px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0rem;
+}
+.front-page-logo {
+    height: 11.5vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 3rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 1.5rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.9rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 1rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 1em;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 1.3rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.8rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.54rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
+/*------------------------------------
+SCREENS SMALLER THAN 1200px
+-------------------------------------- */
+@media (max-width: 1200px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0rem;
+}
+.front-page-logo {
+    height: 11.5vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 3rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 1.5rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.9rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 1rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 1em;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 1.3rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.8rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.54rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
+/*------------------------------------
+SCREENS SMALLER THAN 1120px
+-------------------------------------- */
+@media (max-width: 1120px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0.5rem;
+}
+.front-page-logo {
+    height: 9vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 2rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 1.45rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.7rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 0.85rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 0.85em;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 0.98rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.7rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.53rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
+/*------------------------------------
+SCREENS SMALLER THAN 1040px
+-------------------------------------- */
+@media (max-width: 1040px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0.5rem;
+}
+.front-page-logo {
+    height: 9vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 2rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 1.45rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.7rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 0.85rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 0.85em;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 0.98rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.7rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.53rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
+/*------------------------------------
+SCREENS SMALLER THAN 960px
+-------------------------------------- */
+@media (max-width: 960px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0.5rem;
+}
+.front-page-logo {
+    height: 9vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 2rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 1.45rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.7rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 0.85rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 0.85em;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 0.98rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.7rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.53rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
+/*------------------------------------
+SCREENS SMALLER THAN 880px
+-------------------------------------- */
+@media (max-width: 880px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0.5rem;
+}
+.front-page-logo {
+    height: 7.5vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 2rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 1.45rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.7rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 0.85rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 0.85em;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 0.98rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.7rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.53rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
+/*------------------------------------
+SCREENS SMALLER THAN 800px
+-------------------------------------- */
+@media (max-width: 800px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0.3rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0.7rem;
+}
+.front-page-logo {
+    height: 7.5vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 0.80rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 1.3rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.7rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 0.85rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 0.85em;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 0.98rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.7rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.53rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
+/*------------------------------------
+SCREENS SMALLER THAN 720px
+-------------------------------------- */
+@media (max-width: 720px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0.3rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0.7rem;
+}
+.front-page-logo {
+    height: 7.5vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 0.80rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 1.3rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.7rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 0.85rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 0.85em;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 0.98rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.7rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.53rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
+/*------------------------------------
+SCREENS SMALLER THAN 640px
+-------------------------------------- */
+@media (max-width: 640px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0.3rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0.7rem;
+}
+.front-page-logo {
+    height: 7.5vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 0.80rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 1.2rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.7rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 0.75rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 0.75rem;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 0.87rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.58rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.5rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
+/*------------------------------------
+SCREENS SMALLER THAN 560px
+-------------------------------------- */
+@media (max-width: 560px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0.3rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0.6rem;
+}
+.front-page-logo {
+    height: 7vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 0.5rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 1.15rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.7rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 0.75rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 0.75rem;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 0.87rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.58rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.5rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
+/*------------------------------------
+SCREENS SMALLER THAN 480px
+-------------------------------------- */
+@media (max-width: 480px) {
+    header {
+    padding: 1vh;
+}
+.header-nav {
+    gap: 0.0rem;
+}
+/* Navigation links on left and right sides */
+/* Navigation links on left and right sides */
+.nav-left,
+.nav-right {
+    gap: 0.6rem;
+}
+.front-page-logo {
+    height: 7vh;
+}
+/* Individual navigation items */
+header nav ul li {
+    margin: 0 0.2rem;
+}
+/* Navigation link text styling */
+header nav ul li a {
+    font-size: 0.95rem;
+}
+
+/* Main footer container */
+.footer {
+    padding: 0.7rem;
+    text-align: center;
+}
+/* Footer content wrapper - keeps main items on one line */
+.footer-content {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+/* Facebook section in footer */
+.facebook {
+    padding-top: 5px;
+}
+/* Facebook button styling */
+.facebook button {
+    font-size: 0.75rem;
+}
+/* Phone number text */
+.call-us-text {
+    font-size: 0.75rem;
+    margin: 0;
+    white-space: nowrap; /* Prevents text wrapping */
+    transition: color 0.4s ease;
+}
+/* Email text */
+.email-text {
+    font-size: 0.87rem;
+    margin: 0;
+}
+/* Copyright section - always goes below main content */
+.copyright {
+    width: 100%;
+    text-align: left;
+    font-size: 0.58rem;
+    padding-top: 0px;
+}
+.credit-text {
+    text-align: right;
+    font-size: 0.5rem;
+    margin: 0px 0 0 0;
+    letter-spacing: 0.01rem;
+}
+}
+
+
 /*------------------------------------
 SCREENS SMALLER THAN 400px
 -------------------------------------- */

@@ -2,7 +2,6 @@
    LARGE SCREEN OPTIMIZATION
    (Screens bigger than 1200px - big desktops)
    ============================================ */
-
 @media (min-width: 1200px) {
     .photo-gallery {
     margin-top: 1.6rem;

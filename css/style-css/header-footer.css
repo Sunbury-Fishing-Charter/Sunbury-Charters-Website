@@ -19,7 +19,7 @@ header {
     background-color: #1a2733;
     z-index: 1000;
     box-sizing: border-box;
-    padding: 1.5vh 2rem;
+    padding: 1vh;
 }
 .header-nav {
     width: 100%;
@@ -51,7 +51,7 @@ header {
     z-index: 2;
 }
 .front-page-logo {
-    height: 9vh;
+    height: 13vh;
     width: auto;
     display: block;
 }
@@ -65,13 +65,13 @@ header nav ul {
 }
 /* Individual navigation items */
 header nav ul li {
-    margin: 0 0.8rem;
+    margin: 0 0.0rem;
 }
 /* Navigation link text styling */
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.78rem;
     font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
     transition: color 0.4s;
 }

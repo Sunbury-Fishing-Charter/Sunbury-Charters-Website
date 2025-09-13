@@ -826,6 +826,7 @@
     .pic-title {
         top: 9.8rem;
         font-size: 1.66rem;
+        font-weight: 700;
     }
     .top-fishing-examples {
         gap: 0.5rem;
