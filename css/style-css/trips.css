@@ -1,0 +1,172 @@
+/*------------------------------------
+  BASIC PAGE SETUP SECTION
+-------------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f4f7fa 0%, #e8f4f8 100%);
+}
+
+/*------------------------------------
+  MAIN INTRO SECTION
+-------------------------------------- */
+.intro {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10rem;
+    max-width: 1100px;
+}
+.intro-header {
+    letter-spacing: 0.5px;
+    font-size: 3rem;
+    color: #2c3e50;
+    font-weight: normal;
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    font-variant: small-caps;
+    margin-bottom: 2rem;
+}
+.intro-txt{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+
+/*------------------------------------
+  PRICE SECTION
+-------------------------------------- */
+.price-section {
+    padding-top: 5rem;
+    min-height: 90vh;
+}
+.price-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+.price-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+}
+.price-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+.price-title {
+    font-size: 1.75rem;
+    margin-bottom: 5rem;
+    letter-spacing: 0.5px;
+}
+.price-location {
+    font-size: 1.35rem;
+    margin-bottom: 5rem;
+    letter-spacing: 0.5px;
+}
+.price-price {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+.price-button {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #1e3a5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+.price-button:hover {
+    background-color: #2c4f75;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
+}
+.price-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.whats-included {
+  text-align: left;
+  margin: 1.5rem 0;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #1e3a5f;
+}
+.whats-included p {
+  font-weight: bold;
+  color: #1e3a5f;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.whats-included ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style: none;
+}
+.whats-included li {
+  margin-bottom: 0.4rem;
+  color: #555;
+  font-size: 0.95rem;
+  position: relative;
+}
+.whats-included li:before {
+  content: "✓ ";
+  color: #2ecc71;
+  font-weight: bold;
+  position: absolute;
+  left: -1.2rem;
+}
+
+/*------------------------------------
+  REQUIRED PAYMENT SECTION
+-------------------------------------- */
+.required-payment-section {
+  background: #1e3a5f;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.required-payment-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.required-payment-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.required-payment-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-benefits {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.payment-benefits p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+}

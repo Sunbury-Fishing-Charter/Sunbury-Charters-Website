@@ -1,0 +1,335 @@
+/*------------------------------------
+ SCREENS SMALLER THAN 400px
+-------------------------------------- */
+
+
+/*------------------------------------
+ SCREENS SMALLER THAN 900px
+-------------------------------------- */
+@media (max-width: 900px) { 
+    /* ------INTRO SECTION------ */
+    .intro {
+        margin-top: 7rem;
+        max-width: 1100px;
+    }
+    .intro-header {
+        letter-spacing: 0.5px;
+        font-size: 2.5rem;
+        margin-bottom: 0rem;
+    }
+    .intro-txt{
+        font-size: 1.31rem;
+        line-height: 1.6;
+    }
+
+    /* ------PRICE SECTION------ */
+    .price-section {
+        padding-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .price-container {
+        gap: 2rem;
+        margin: 0 auto 5rem;
+    }
+    .price-card {
+        padding: 0.7rem 2rem 2rem;
+    }
+    .price-title {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+    .price-location {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .price-price {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+    .price-button {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+
+    }
+    .price-icon {
+        font-size: 3rem;
+        margin-bottom: 0rem;
+    }
+}
+
+/*------------------------------------
+ SCREENS SMALLER THAN 800px
+-------------------------------------- */
+@media (max-width: 800px) { 
+    /* ------INTRO SECTION------ */
+    .intro {
+        margin-top: 7rem;
+        max-width: 1100px;
+    }
+    .intro-header {
+        letter-spacing: 0.5px;
+        font-size: 2.5rem;
+        margin-bottom: 0rem;
+    }
+    .intro-txt{
+        font-size: 1.31rem;
+        line-height: 1.6;
+    }
+
+    /* ------PRICE SECTION------ */
+    .price-section {
+        padding-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .price-container {
+        gap: 2rem;
+        margin: 0 auto 5rem;
+    }
+    .price-card {
+        padding: 0.7rem 2rem 2rem;
+    }
+    .price-title {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+    .price-location {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .price-price {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+    .price-button {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+
+    }
+    .price-icon {
+        font-size: 3rem;
+        margin-bottom: 0rem;
+    }
+}
+
+
+/*------------------------------------
+ SCREENS SMALLER THAN 700px
+-------------------------------------- */
+@media (max-width: 700px) { 
+    /* ------INTRO SECTION------ */
+    .intro {
+        margin-top: 7rem;
+        max-width: 1100px;
+    }
+    .intro-header {
+        letter-spacing: 0.5px;
+        font-size: 2.5rem;
+        margin-bottom: 0rem;
+    }
+    .intro-txt{
+        font-size: 1.31rem;
+        line-height: 1.6;
+    }
+
+    /* ------PRICE SECTION------ */
+    .price-section {
+        padding-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .price-container {
+        gap: 2rem;
+        margin: 0 auto 5rem;
+    }
+    .price-card {
+        padding: 0.7rem 2rem 2rem;
+    }
+    .price-title {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+    .price-location {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .price-price {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+    .price-button {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+
+    }
+    .price-icon {
+        font-size: 3rem;
+        margin-bottom: 0rem;
+    }
+}
+
+
+/*------------------------------------
+ SCREENS SMALLER THAN 600px
+-------------------------------------- */
+@media (max-width: 600px) { 
+    /* ------INTRO SECTION------ */
+    .intro {
+        margin-top: 7rem;
+        max-width: 1100px;
+    }
+    .intro-header {
+        letter-spacing: 0.5px;
+        font-size: 1.95rem;
+        margin-bottom: 0rem;
+    }
+    .intro-txt{
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* ------PRICE SECTION------ */
+    .price-section {
+        padding-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .price-container {
+        gap: 2rem;
+        margin: 0 auto 3rem;
+    }
+    .price-card {
+        padding: 0.7rem 2rem 2rem;
+    }
+    .price-title {
+        font-size: 1.38rem;
+        margin-bottom: 0rem;
+    }
+    .price-location {
+        font-size: 1.03rem;
+        margin-bottom: 3rem;
+    }
+    .price-price {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+    .price-button {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .price-icon {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+}
+
+
+/*------------------------------------
+ SCREENS SMALLER THAN 500px
+-------------------------------------- */
+@media (max-width: 500px) { 
+    /* ------INTRO SECTION------ */
+    .intro {
+        margin-top: 7rem;
+        max-width: 1100px;
+    }
+    .intro-header {
+        letter-spacing: 0.5px;
+        font-size: 1.95rem;
+        margin-bottom: 0rem;
+    }
+    .intro-txt{
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* ------PRICE SECTION------ */
+    .price-section {
+        padding-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .price-container {
+        gap: 2rem;
+        margin: 0 auto 3rem;
+    }
+    .price-card {
+        padding: 0.7rem 2rem 2rem;
+    }
+    .price-title {
+        font-size: 1.38rem;
+        margin-bottom: 0rem;
+    }
+    .price-location {
+        font-size: 1.03rem;
+        margin-bottom: 3rem;
+    }
+    .price-price {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+    .price-button {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .price-icon {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+}
+
+
+/*------------------------------------
+ SCREENS SMALLER THAN 400px
+-------------------------------------- */
+@media (max-width: 400px) { 
+    /* ------INTRO SECTION------ */
+    .intro {
+        margin-top: 7rem;
+        max-width: 1100px;
+    }
+    .intro-header {
+        letter-spacing: 0.5px;
+        font-size: 1.95rem;
+        margin-bottom: 0rem;
+    }
+    .intro-txt{
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* ------PRICE SECTION------ */
+    .price-section {
+        padding-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .price-container {
+        gap: 2rem;
+        margin: 0 auto 3rem;
+    }
+    .price-card {
+        padding: 0.7rem 2rem 2rem;;
+    }
+    .price-title {
+        font-size: 1.38rem;
+        margin-bottom: 0rem;
+    }
+    .price-location {
+        font-size: 1.03rem;
+        margin-bottom: 3rem;
+    }
+    .price-price {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+    .price-button {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .price-icon {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+}
