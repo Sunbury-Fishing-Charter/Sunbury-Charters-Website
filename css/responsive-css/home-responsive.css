@@ -1,549 +1,356 @@
-/* ==============================================
-   (Screens smaller than 1480px)
-================================================= */
-@media (max-width: 1480px) {
-    .banner-pic  {
-        height: 65vh;
-    }
-    .pic-title {
-        top: 13rem;
-        font-size: 6rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 24.2vw;
-        height: 70vh;
-    }
-    .image-container {
-        padding-bottom: 2rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 1440px)
-================================================= */
-@media (max-width: 1440px) {
-  .banner-pic  {
-        height: 60vh;
-    }
-    .pic-title {
-        top: 12rem;
-        font-size: 5rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 24vw;
-        height: 65vh;
-    }
-    .image-container {
-        padding-bottom: 2rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 1400px)
-================================================= */
-@media (max-width: 1400px) {
-    .banner-pic  {
-        height: 55vh;
-    }
-    .pic-title {
-        font-size: 4.3rem;
-        top: 12.5rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 24.1vw;
-        height: 50vh;
-    }
-    .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
-    }
-    .image-container {
-        padding-bottom: 2rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 1360px)
-================================================= */
-@media (max-width: 1360px) {
-    .banner-pic  {
-        height: 55vh;
-    }
-    .pic-title {
-        font-size: 4.3rem;
-        top: 12.5rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 24.1vw;
-        height: 50vh;
-    }
-    .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
-    }
-    .image-container {
-        padding-bottom: 2rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 1320px)
-================================================= */
-@media (max-width: 1320px) {
-    .banner-pic  {
-        height: 50vh;
-    }
-    .pic-title {
-        font-size: 4rem;
-        top: 11.5rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23.9vw;
-        height: 47vh;
-    }
-    .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
-    }
-    .image-container {
-        padding-bottom: 2rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 1260px)
-================================================= */
-@media (max-width: 1260px) {
-    .banner-pic  {
-        height: 50vh;
-    }
-    .pic-title {
-        font-size: 4rem;
-        top: 11.5rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23.9vw;
-        height: 47vh;
-    }
-    .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
-    }
-    .image-container {
-        padding-bottom: 2rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 1220px)
-================================================= */
-@media (max-width: 1220px) {
-    .banner-pic  {
-        height: 50vh;
-    }
-    .pic-title {
-        font-size: 4rem;
-        top: 11.5rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23.9vw;
-        height: 47vh;
-    }
-    .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
-    }
-    .image-container {
-        padding-bottom: 2rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 1180px)
-================================================= */
-@media (max-width: 1180px) {
-    .banner-pic  {
-        height: 50vh;
-    }
-    .pic-title {
-        font-size: 4rem;
-        top: 11.5rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23.9vw;
-        height: 47vh;
-    }
-    .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
-    }
-    .image-container {
-        padding-bottom: 2rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 1140px)
-================================================= */
+/*------------------------------------
+ SCREENS 1140px AND SMALLER
+-------------------------------------- */
 @media (max-width: 1140px) {
-    .banner-pic  {
-        height: 43vh;
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
+        height: 50vh;
     }
     .pic-title {
+        left: 50%;
+        top: 43%;
         font-size: 4rem;
-        top: 9.4rem;
+        letter-spacing: 1.5px;
     }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
     .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
+        gap: 1%;
+        padding: 1.5vh 2.5rem;
+        flex-wrap: nowrap;
     }
     .top-fishing-examples img {
-        width: 23.9vw;
-        height: 45vh;
+        width: 25.5%;
+        height: 50vh;
+        flex-shrink: 0;
     }
-    .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.5rem;
     }
-    .image-container {
+    .fishing-charter-container {
         padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
+    }
+    .main-heading {
+        font-size: 2.5rem;
+        margin-bottom: 0rem;
+    }
+    .content-wrapper {
+        gap: 25px;
+    }
+    .subheading {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 1.1rem;
     }
 }
 
 
-/* ==============================================
-   (Screens smaller than 1100px)
-================================================= */
-@media (max-width: 1100px) {
-   .banner-pic  {
-        height: 43vh;
+/*------------------------------------
+ SCREENS 1080px AND SMALLER
+-------------------------------------- */
+@media (max-width: 1080px) {
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
+        height: 50vh;
     }
     .pic-title {
+        left: 50%;
+        top: 43%;
         font-size: 4rem;
-        top: 9.4rem;
+        letter-spacing: 1.5px;
     }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
     .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
+        gap: 1%;
+        padding: 1.5vh 2.5rem;
+        flex-wrap: nowrap;
     }
     .top-fishing-examples img {
-        width: 23.9vw;
-        height: 45vh;
+        width: 25.5%;
+        height: 50vh;
+        flex-shrink: 0;
     }
-    .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.5rem;
     }
-    .image-container {
+    .fishing-charter-container {
         padding-bottom: 2rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 1060px)
-================================================= */
-@media (max-width: 1060px) {
-  .banner-pic  {
-        height: 43vh;
-    }
-    .pic-title {
-        font-size: 4rem;
-        top: 9.4rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23.8vw;
-        height: 43vh;
+        padding-top: 1rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
     }
     .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
+        font-size: 2.5rem;
+        margin-bottom: 0rem;
     }
-    .image-container {
-        padding-bottom: 3rem;
+    .content-wrapper {
+        gap: 25px;
+    }
+    .subheading {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 1.1rem;
     }
 }
 
 
-/* ==============================================
-    (Screens smaller than 1000px)
-================================================= */
+/*------------------------------------
+ SCREENS 1000px AND SMALLER
+-------------------------------------- */
 @media (max-width: 1000px) {
-    .banner-pic  {
-        height: 43vh;
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
+        height: 50vh;
     }
     .pic-title {
-        font-size: 3.5rem;
-        top: 9.7rem;
+        left: 50%;
+        top: 43%;
+        font-size: 4rem;
+        letter-spacing: 1.5px;
     }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
     .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
+        gap: 1%;
+        padding: 1.5vh 1.75rem;
+        flex-wrap: nowrap;
     }
     .top-fishing-examples img {
-        width: 23.5vw;
+        width: 25.5%;
         height: 40vh;
+        flex-shrink: 0;
+    }
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.3rem;
+    }
+    .fishing-charter-container {
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
     }
     .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
     }
-    .image-container {
-        padding-bottom: 4rem;
+    .content-wrapper {
+        gap: 25px;
+    }
+    .captain-image {
+        width: min(220px, 80vw);
+        height: min(220px, 80vw);
+    }
+    .subheading {
+        font-size: 1.4rem;
+    }
+    .description {
+        font-size: 1rem;
     }
 }
 
 
-/* ==============================================
-    (Screens smaller than 960px)
-================================================= */
-@media (max-width: 960px) {
-    .banner-pic  {
-        height: 37vh;
-    }
-    .pic-title {
-        font-size: 3.5rem;
-        top: 7.7rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23vw;
-        height: 37vh;
-    }
-    .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
-    }
-    .image-container {
-        padding-bottom: 5rem;
-    }
-}
-
-
-/* ==============================================
-    (Screens smaller than 920px)
-================================================= */
+/*------------------------------------
+ SCREENS 920px AND SMALLER
+-------------------------------------- */
 @media (max-width: 920px) {
-    .banner-pic  {
-        height: 37vh;
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
+        height: 42vh;
     }
     .pic-title {
+        left: 50%;
+        top: 43%;
         font-size: 3.5rem;
-        top: 7.7rem;
+        letter-spacing: 1.5px;
     }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
     .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
+        gap: 1%;
+        padding: 1.5vh 1.75rem;
+        flex-wrap: nowrap;
     }
     .top-fishing-examples img {
-        width: 23vw;
-        height: 37vh;
+        width: 25.5%;
+        height: 40vh;
+        flex-shrink: 0;
+    }
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.3rem;
+    }
+    .fishing-charter-container {
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
     }
     .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
     }
-    .image-container {
-        padding-bottom: 5rem;
+    .content-wrapper {
+        gap: 25px;
+    }
+    .captain-image {
+        width: min(220px, 80vw);
+        height: min(220px, 80vw);
+    }
+    .subheading {
+        font-size: 1.4rem;
+    }
+    .description {
+        font-size: 1rem;
     }
 }
 
-
-/* ==============================================
-    (Screens smaller than 880px)
-================================================= */
-@media (max-width: 880px) {
-    .banner-pic  {
-        height: 37vh;
-    }
-    .pic-title {
-        font-size: 3.2rem;
-        top: 8rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23vw;
-        height: 35vh;
-    }
-    .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
-    }
-    .image-container {
-        padding-bottom: 7rem;
-    }
-}
-
-
-
-/* ==============================================
-    (Screens smaller than 840px)
-================================================= */
+/*------------------------------------
+ SCREENS 840px AND SMALLER
+-------------------------------------- */
 @media (max-width: 840px) {
-    .banner-pic  {
-        height: 37vh;
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
+        height: 42vh;
     }
     .pic-title {
-        font-size: 3.2rem;
-        top: 8rem;
+        left: 50%;
+        top: 43%;
+        font-size: 3.5rem;
+        letter-spacing: 1.5px;
     }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
     .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
+        gap: 1%;
+        padding: 1.5vh 1.75rem;
+        flex-wrap: nowrap;
     }
     .top-fishing-examples img {
-        width: 23vw;
-        height: 35vh;
+        width: 25.5%;
+        height: 40vh;
+        flex-shrink: 0;
+    }
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.3rem;
+    }
+    .fishing-charter-container {
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
     }
     .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
     }
-    .image-container {
-        padding-bottom: 7rem;
+    .content-wrapper {
+        gap: 25px;
+    }
+    .captain-image {
+        width: min(220px, 80vw);
+        height: min(220px, 80vw);
+    }
+    .subheading {
+        font-size: 1.4rem;
+    }
+    .description {
+        font-size: 1rem;
     }
 }
 
 
-/* ==============================================
-    (Screens smaller than 800px)
-================================================= */
-@media (max-width: 800px) {
-   .banner-pic  {
-        height: 37vh;
+/*------------------------------------
+ SCREENS 780px AND SMALLER
+-------------------------------------- */
+@media (max-width: 780px) {
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
+        height: 42vh;
     }
     .pic-title {
-        font-size: 3.2rem;
-        top: 8rem;
+        left: 50%;
+        top: 46%;
+        font-size: 2.8rem;
+        letter-spacing: 1.5px;
     }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
     .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
+        gap: 1%;
+        padding: 1.5vh 1.5rem;
+        flex-wrap: nowrap;
     }
     .top-fishing-examples img {
-        width: 23vw;
-        height: 29vh;
+        width: 25.5%;
+        height: 40vh;
+        flex-shrink: 0;
+    }
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.3rem;
+    }
+    .fishing-charter-container {
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
     }
     .main-heading {
-        font-size: 3rem;
-        padding-left: 0rem;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
     }
-    .image-container {
-        padding-bottom: 7rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 760px)
-================================================= */
-@media (max-width: 760px) {
-    .banner-pic  {
-        height: 37vh;
-    }
-    .pic-title {
-        font-size: 3.1rem;
-        top: 8rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23vw;
-        height: 29vh;
-    }
-    .main-heading {
-        font-size: 2.9rem;
-        padding-left: 0rem;
-    }
-
     .content-wrapper {
         flex-direction: column;
         text-align: center;
@@ -553,317 +360,335 @@
         width: min(220px, 80vw);
         height: min(220px, 80vw);
     }
-    .image-container {
-        padding-bottom: 0rem;
+    .subheading {
+        font-size: 1.4rem;
+    }
+    .description {
+        font-size: 1rem;
     }
 }
 
 
-/* ==============================================
-   (Screens smaller than 720px)
-================================================= */
-@media (max-width: 720px) {
-    .banner-pic  {
-        height: 37vh;
-    }
-    .pic-title {
-        font-size: 3rem;
-        top: 8rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23vw;
-        height: 27vh;
-    }
-    .main-heading {
-        font-size: 2.7rem;
-        padding-left: 0rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 680px)
-================================================= */
-@media (max-width: 680px) {
-    .banner-pic  {
-        height: 34vh;
-    }
-    .pic-title {
-        font-size: 2.7rem;
-        top: 7.5rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23vw;
-        height: 27vh;
-    }
-    .main-heading {
-        font-size: 2.7rem;
-        padding-left: 0rem;
-    }       
-}
-
-
-/* ==============================================
-   (Screens smaller than 640px)
-================================================= */
-@media (max-width: 640px) {
-    .banner-pic  {
-        height: 34vh;
-    }
-    .pic-title {
-        font-size: 2.5rem;
-        top: 7.5rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 23vw;
-        height: 25vh;
-    }
-    .main-heading {
-        font-size: 2.5rem;
-        padding-left: 0rem;
-    }       
-}
-
-
-/* ==============================================
-   (Screens smaller than 600px)
-================================================= */
-@media (max-width: 600px) {
-   .banner-pic  {
-        height: 30vh;
-    }
-    .pic-title {
-        font-size: 2.2rem;
-        top: 6.7rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 22vw;
-        height: 23vh;
-    }
-    .main-heading {
-        font-size: 2.3rem;
-        padding-left: 0rem;
-    }   
-}
-
-
-/* ==============================================
-   (Screens smaller than 560px)
-================================================= */
-@media (max-width: 560px) {
-    .banner-pic  {
-        height: 30vh;
-    }
-    .pic-title {
-        font-size: 2.2rem;
-        top: 6.7rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 22vw;
-        height: 22vh;
-    }
-    .main-heading {
-        font-size: 2.1rem;
-        padding-left: 0rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 520px)
-================================================= */
-@media (max-width: 520px) {
-    .banner-pic  {
-        height: 30vh;
-    }
-    .pic-title {
-        font-size: 2rem;
-        top: 6.9rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 22vw;
-        height: 22vh;
-    }
-    .main-heading {
-        font-size: 2rem;
-        padding-left: 0rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens smaller than 480px)
-================================================= */
-@media (max-width: 480px) {
-    .banner-pic  {
-        height: 30vh;
-    }
-    .pic-title {
-        font-size: 1.8rem;
-        top: 7rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 22vw;
-        height: 20vh;
-    }
-    .main-heading {
-        font-size: 1.9rem;
-        padding-left: 0rem;
-    }
-
-}
-
-
-/*===============================================
-    (Screens smaller than 440px)
-================================================= */
-  @media (max-width: 440px) {
-    .banner-pic  {
-        height: 30vh;
-    }
-    .pic-title {
-        top: 7.5rem;
-        font-size: 1.7rem;
-    }
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        width: 22vw;
-        height: 20vh;
-    }
-    .main-heading {
-        font-size: 1.8rem;
-        padding-left: 0rem;
-    }
-}
-
-
-/* ==============================================
-   (Screens 420px and smaller)
-================================================= */
-@media (max-width: 420px) {
-    .banner-pic  {
-        height: 30vh;
-    }
-    .pic-title {
-        top: 7.2rem;
-        font-size: 1.67rem;
-    }
-    
-    .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
-    }
-    .top-fishing-examples img {
-        flex: auto;
-        width: 22vw;
-        height: 20vh;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-    .main-heading {
-        font-size: 1.7rem;
-        padding-left: 0rem;
-    }
-}
-
-
-/*===============================================
-    (Screens smaller than 400px)
-================================================= */
-@media (max-width: 400px) {
-    .banner-pic  {
+/*------------------------------------
+ SCREENS 700px AND SMALLER
+-------------------------------------- */
+@media (max-width: 700px) {
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
         height: 40vh;
     }
     .pic-title {
-        top: 9.8rem;
-        font-size: 1.66rem;
-        font-weight: 700;
+        left: 50%;
+        top: 46%;
+        font-size: 2.8rem;
+        letter-spacing: 1.5px;
     }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
     .top-fishing-examples {
-        gap: 0.5rem;
-        padding: 0.7rem;
+        gap: 1%;
+        padding: 1.5vh 1.5rem;
+        flex-wrap: nowrap;
     }
     .top-fishing-examples img {
-        width: 21.95vw;
-        height: 23vh;
-        object-fit: cover;
-        border-radius: 8px;
+        width: 25.5%;
+        height: 30vh;
+        flex-shrink: 0;
+    }
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.3rem;
+    }
+    .fishing-charter-container {
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.7rem;
-        padding-left: 0rem;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    .captain-image {
+        width: min(220px, 80vw);
+        height: min(220px, 80vw);
+    }
+    .subheading {
+        font-size: 1.4rem;
+    }
+    .description {
+        font-size: 1rem;
     }
 }
 
 
-/*===============================================
-    (Screens smaller than 380px)
-================================================= */
-@media (max-width: 380px) {
+/*------------------------------------
+ SCREENS 620px AND SMALLER
+-------------------------------------- */
+@media (max-width: 620px) {
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
+        height: 40vh;
+    }
+    .pic-title {
+        left: 50%;
+        top: 46%;
+        font-size: 2.5rem;
+        letter-spacing: 1.5px;
+    }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
     .top-fishing-examples {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        padding: 0.7rem;
+        gap: 1%;
+        padding: 1.5vh 1rem;
+        flex-wrap: nowrap;
     }
     .top-fishing-examples img {
-        flex: auto;
-        width: 21.7vw;
-        height: 20vh;
-        object-fit: cover;
-        border-radius: 8px;
+        width: 25.5%;
+        height: 24vh;
+        flex-shrink: 0;
+    }
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.3rem;
+    }
+    .fishing-charter-container {
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.6rem;
-        padding-left: 0rem;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    .captain-image {
+        width: min(220px, 80vw);
+        height: min(220px, 80vw);
+    }
+    .subheading {
+        font-size: 1.4rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+}
+
+
+/*------------------------------------
+ SCREENS 560px AND SMALLER
+-------------------------------------- */
+@media (max-width: 560px) {
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
+        height: 40vh;
+    }
+    .pic-title {
+        left: 50%;
+        top: 46%;
+        font-size: 2.1rem;
+        letter-spacing: 1.5px;
+    }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
+    .top-fishing-examples {
+        gap: 1%;
+        padding: 1.5vh 1rem;
+        flex-wrap: nowrap;
+    }
+    .top-fishing-examples img {
+        width: 25.5%;
+        height: 24vh;
+        flex-shrink: 0;
+    }
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.3rem;
+    }
+    .fishing-charter-container {
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
+    }
+    .main-heading {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    .captain-image {
+        width: min(220px, 80vw);
+        height: min(220px, 80vw);
+    }
+    .subheading {
+        font-size: 1.4rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+}
+
+
+/*------------------------------------
+ SCREENS 480px AND SMALLER
+-------------------------------------- */
+@media (max-width: 480px) {
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
+        height: 35vh;
+    }
+    .pic-title {
+        left: 50%;
+        top: 46%;
+        font-size: 1.7rem;
+        letter-spacing: 1.5px;
+    }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
+    .top-fishing-examples {
+        gap: 1%;
+        padding: 1.5vh 1rem;
+        flex-wrap: nowrap;
+    }
+    .top-fishing-examples img {
+        width: 25.5%;
+        height: 24vh;
+        flex-shrink: 0;
+    }
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.3rem;
+    }
+    .fishing-charter-container {
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
+    }
+    .main-heading {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    .captain-image {
+        width: min(220px, 80vw);
+        height: min(220px, 80vw);
+    }
+    .subheading {
+        font-size: 1.4rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+}
+
+
+/*------------------------------------
+ SCREENS 400px AND SMALLER
+-------------------------------------- */
+@media (max-width: 400px) {
+    /*---Banner Section*/
+    .banner-pic {
+        width: 100vw;
+        height: 35vh;
+    }
+    .pic-title {
+        left: 50%;
+        top: 46%;
+        font-size: 1.7rem;
+        letter-spacing: 1.5px;
+    }
+    .pic-title-date{
+        width: "";
+        height: "";
+    }
+
+    /*---Fishing Images Section*/
+    .top-fishing-examples {
+        gap: 1%;
+        padding: 1.5vh 0.9rem;
+        flex-wrap: nowrap;
+    }
+    .top-fishing-examples img {
+        width: 25.5%;
+        height: 24vh;
+        flex-shrink: 0;
+    }
+
+    /*---Captain Info Section---*/
+    .fishing-charter-in-sunbury {
+        padding: 1.3rem;
+    }
+    .fishing-charter-container {
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-radius: 10px;
+    }
+    .main-heading {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    .captain-image {
+        width: min(220px, 80vw);
+        height: min(220px, 80vw);
+    }
+    .subheading {
+        font-size: 1.4rem;
+    }
+    .description {
+        font-size: 1rem;
     }
 }

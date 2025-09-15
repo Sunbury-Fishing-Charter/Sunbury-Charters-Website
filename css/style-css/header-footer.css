@@ -37,10 +37,7 @@ header {
 .nav-right {
     display: flex;
     gap: 1.2rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex: 1 1 0; /* let left and right take equal space */
+    flex: 1 1 0;
     align-items: center;
 }
 .front-page-logo-link {
@@ -48,7 +45,7 @@ header {
     display: block;
     margin: 0 0.5rem;
     text-align: center;
-    z-index: 2;
+    z-index: 1;
 }
 .front-page-logo {
     height: 13vh;
@@ -98,11 +95,11 @@ header nav ul li a:hover {
     justify-content: space-evenly;
     align-items: center;
     gap: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
 }
 /* Facebook section in footer */
 .facebook {
-    padding-top: 5px;
+    padding-top: 1vh;
 }
 /* Facebook button styling */
 .facebook button {
@@ -110,7 +107,6 @@ header nav ul li a:hover {
     background-color: #1a2733;
     color: white;
     border: 0px #1a2733;
-    padding: 6px 0;
     cursor: pointer;
     transition: color 0.4s ease;
 }
@@ -147,5 +143,4 @@ header nav ul li a:hover {
     text-align: right;
     font-size: 0.6rem;
     margin: 5px 0 0 0;
-    letter-spacing: 0.01rem;
 }

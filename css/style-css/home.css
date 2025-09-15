@@ -10,7 +10,7 @@ html, body {
    BANNER SECTION (BIG IMAGE AT TOP)
    ============================================ */
 
-#banner-picture {
+.banner-picture {
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -40,7 +40,7 @@ html, body {
     position: absolute;
     width: 100%;
     left: 50%;
-    top: 43%;
+    top: 40%;
     transform: translateX(-50%);
     color: #ffffff;
     text-shadow: 0 8px 20px rgba(0,0,0,0.7);
@@ -51,9 +51,8 @@ html, body {
     font-variant: small-caps;
     font-weight: bold;
     font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
-    font-size: 5vw;
+    font-size: 7rem;
     letter-spacing: 2.5px;
-    padding: 0 1rem;
 }
 
 /* Date text under the main title */
@@ -94,7 +93,7 @@ html, body {
     width: 23vw;
     height: 650px;
     max-width: 100%;
-    border-radius: 12px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     object-fit: cover;
 }
