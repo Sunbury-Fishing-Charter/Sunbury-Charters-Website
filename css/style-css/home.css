@@ -21,7 +21,7 @@
 :root {
     --scroller-speed: 40s;     /* tweak to make it faster/slower */
     --card-width: 220px;       /* width of each sponsor card */
-    --card-gap: 20px;
+    --card-gap: 50px;
     --card-padding: 12px;
     --card-radius: 12px;
 }
@@ -232,8 +232,7 @@ html, body {
     padding: 24px 12px;
     background: transparent;
     background-color: #1a2733;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 1.5rem;
 }
 
 .partners-title {
@@ -243,67 +242,70 @@ html, body {
     color: white;
     font-family: georgia, serif;
     font-style: bold;
+    letter-spacing: 0.25rem;
 }
 
 .scroller {
     overflow: hidden;
     width: 100%;
-    outline: none; /* keep focus-visible behavior if needed */
+    outline: 2px black solid; /* keep focus-visible behavior if needed */
 }
 
 .scroller-inner {
     display: flex;
     gap: var(--card-gap);
     align-items: center;
-    /* duplicate content will be appended in JS so animation to -50% is correct */
-                /* animation removed; JS will handle infinite scroll */
-    /* width is set by JS for seamless infinite scroll */
 }
 
 .scroller-inner .partner-card {
-  list-style: none;
-  flex: 0 0 var(--card-width);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: var(--card-padding);
-  border-radius: var(--card-radius);
-  background: #374e62;
-  box-shadow: 0 6px 18px rgba(8, 24, 48, 0.06);
+    flex: 0 0 var(--card-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    background: #374e62;
+    box-shadow: 0 6px 18px rgba(8, 24, 48, 0.06);
 }
 
 .partner-card a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-  width: 100%;
+    margin-top: 1vh;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 50vh;
+    border: 2px solid #1a2733
 }
 .partner-card img {
-  max-width: 100%;
-  height: 175px;
-  object-fit: contain;
-  display: block;
-  margin-bottom: 8px;
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 8px;
 }
 
-.partner-name {
-  font-size: 1.1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  display: block;
-  color: white;
+.partner-btn {
+    font-size: 0.95rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: block;
+    color: white;
+    margin-top: 10vh;
+    width: 100%;
+    height: 8vh;
+    border: 2px #1a2733 solid;
+    border-radius: 25px;
+    box-shadow: rgba(8, 24, 48, 0.06)
 }
 
-@keyframes scroller-move {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
+
 
 .scroller:hover .scroller-inner,
 .scroller:focus-within .scroller-inner {
-  animation-play-state: paused;
+    animation-play-state: paused;
 }
+
 
