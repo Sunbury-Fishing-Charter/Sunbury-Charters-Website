@@ -48,7 +48,7 @@ html, body {
 .banner-pic {
     position: relative;
     width: 100vw;
-    height: 65vh;
+    height: 75vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -57,13 +57,15 @@ html, body {
 /* The actual banner image */
 .banner-pic img {
     width: 100vw;
-    height: 100%;
+    height: 120%;
     object-fit: cover;
 }
 /* Main title text over the banner image */
 .pic-title {
     position: absolute;
     width: 100%;
+    left: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     color: var(--text-color);
     font-size: var(--banner-font-size);
@@ -247,7 +249,7 @@ html, body {
     background: #374e62;
     box-shadow: 0 6px 24px rgba(8, 24, 48, 0.06);
 }
-.partner-card a {
+.partner-card div {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
@@ -266,6 +268,12 @@ html, body {
     object-fit: contain;
     display: block;
     margin-bottom: 8px;
+}
+
+.partner-description {
+    text-decoration: none;
+    color: inherit;
+
 }
 .partner-btn {
     font-size: 1rem;
