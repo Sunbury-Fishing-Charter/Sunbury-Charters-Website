@@ -1,30 +1,29 @@
-/* Basic style for partner buttons in scroller */
-.partner-btn {
-        background-color: #1e3a5f;  /* Dark blue background */
-        color: white;               /* White text */
-        padding: clamp(12px, 2.5vw, 15px) clamp(25px, 5vw, 35px);
-        font-size: clamp(1rem, 2.5vw, 1.2rem);
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        font-family: 'Georgia', serif;
+:root {
+    /*--- CSS Variables for the partner scroller ---*/
+    --scroller-speed: 40s;  
+    --card-width: 290px;
+    --card-gap: 55px;
+    --card-padding: 20px;
+    --card-radius: 20px;
+    
+    /*--- General font styles ---*/
+    --header-font: 'Georgia', serif;
+    --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --button-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --subheader-font: 'Georgia', serif;
+    --header-size: 3rem;
+    --subheader-size: 1.75rem;
+    --body-size: 1.2rem;
+    --banner-font-size: 7rem;
+    --header-letter-spacing: 0.5px;
+    --subheader-letter-spacing: 0.5px;
+    --text-color: white;
+    --header-font-weight: bold;
+    --subheader-font-weight: italic;
+
 }
 
-.partner-btn:hover, .partner-btn:focus {
-        background-color: #2c4f75;  /* Lighter blue on hover */
-        transform: translateY(-2px);
-        box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
-        outline: none;
-}
-:root {
-    --scroller-speed: 40s;     /* tweak to make it faster/slower */
-    --card-width: 220px;       /* width of each sponsor card */
-    --card-gap: 50px;
-    --card-padding: 12px;
-    --card-radius: 12px;
-}
+
 
 
 /* ============================================
@@ -35,6 +34,7 @@ html, body {
   padding: 0;
 }
 
+
 /* ============================================
    BANNER SECTION (BIG IMAGE AT TOP)
    ============================================ */
@@ -44,7 +44,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
 /* Container for the main banner image */
 .banner-pic {
     position: relative;
@@ -55,69 +54,55 @@ html, body {
     align-items: center;
     justify-content: center;
 }
-
 /* The actual banner image */
 .banner-pic img {
     width: 100vw;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
-
 /* Main title text over the banner image */
 .pic-title {
     position: absolute;
     width: 100%;
-    left: 50%;
-    top: 40%;
-    transform: translateX(-50%);
-    color: #ffffff;
+    transform: translate(-50%, -50%);
+    color: var(--text-color);
+    font-size: var(--banner-font-size);
+    letter-spacing: var(--header-letter-spacing);
+    font-family: var(--header-font);
+    font-weight: var(--header-font-weight);
     text-shadow: 0 8px 20px rgba(0,0,0,0.7);
     text-align: center;
-    font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
-    font-style: normal;
-    text-align: center;
     font-variant: small-caps;
-    font-weight: bold;
-    font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
-    font-size: 7rem;
-    letter-spacing: 2.5px;
 }
-
 /* Date text under the main title */
 .pic-title-date {
     position: absolute;
-    left: 50%;
-    top: 55%;
     width: 100%;
-    transform: translateX(-50%);
+    top: 55%;
     margin-top: 2.25rem;
-    color: #fff;
+    color: var(--text-color);
+    font-size: var(--subheader-font-size);
+    letter-spacing: var(--subheader-letter-spacing);
+    font-family: var(--subheader-font);
+    font-style: var(--subheader-font-weight);
     text-shadow: 0 2px 10px rgba(0,0,0,0.7);
     text-align: center;
-    font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
-    font-size: clamp(1.2rem, 4vw, 2rem);
-    letter-spacing: 1px;
-    padding: 0 1rem;
 }
+
 
 /* ============================================
    PHOTO GALLERY SECTION
    ============================================ */
 
-/* Container for fishing example photos */
 .top-fishing-examples {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.8%;
     flex-wrap: wrap;
-    padding-top: 2.7%;
-    padding-bottom: 2.7%;
+    padding: 2.7% 0;
     background-color: #1a2733;
 }
-
-/* Individual fishing photos */
 .top-fishing-examples img {
     width: 23vw;
     height: 650px;
@@ -127,16 +112,16 @@ html, body {
     object-fit: cover;
 }
 
+
 /* ============================================
    MAIN CONTENT SECTION (CAPTAIN INFO)
-   ============================================ */
+=============================================== */
 
 /* Background section for the captain info */
 .fishing-charter-in-sunbury {
     background-color: #f8f9fa;
     padding: clamp(40px, 8vw, 60px) 20px;
 }
-
 /* White container box for captain content */
 .fishing-charter-container {
     max-width: 1200px;
@@ -146,16 +131,15 @@ html, body {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-
 /* Main heading text */
 .main-heading {
     text-align: center;
-    font-size: clamp(2rem, 5vw, 3.3rem);
+    font-size: var(--header-size);
+    font-weight: var(--header-font-weight);
+    font-family: var(--header-font);
+    letter-spacing: var(--header-letter-spacing);
     color: #2c3e50;
     margin-bottom: clamp(20px, 4vw, 40px);
-    font-weight: bold;
-    letter-spacing: -1px;
-    font-family: 'Georgia', serif;
 }
 
 /* Container that holds image and text side by side */
@@ -188,11 +172,10 @@ html, body {
 
 /* Subheading text */
 .subheading {
-    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    font-size: var(--subheader-size);
+    font-family: var(--subheader-font);
     color: #2c3e50;
     margin-bottom: 8px;
-    font-weight: normal;
-    font-family: 'Georgia', serif;
 }
 
 /* Description paragraph text */
@@ -225,38 +208,35 @@ html, body {
     box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
 }
 
-/*------------------------------
+
+/*---------------------------------------
    FISHING PARTNERS SECTION
---------------------------------*/
+---------------------------------------*/
+
 .fishing-partners {
-    padding: 24px 12px;
+    padding-block: 1rem;
     background: transparent;
     background-color: #1a2733;
     margin-bottom: 1.5rem;
 }
-
 .partners-title {
     text-align: center;
-    font-size: clamp(2rem, 5vw, 3.3rem);
-    margin-bottom: 12px;
+    font-size: 3rem;
+    margin-bottom: 3vh;
     color: white;
     font-family: georgia, serif;
     font-style: bold;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.10rem;
 }
-
 .scroller {
     overflow: hidden;
     width: 100%;
-    outline: 2px black solid; /* keep focus-visible behavior if needed */
 }
-
 .scroller-inner {
     display: flex;
     gap: var(--card-gap);
     align-items: center;
 }
-
 .scroller-inner .partner-card {
     flex: 0 0 var(--card-width);
     display: flex;
@@ -265,47 +245,50 @@ html, body {
     padding: var(--card-padding);
     border-radius: var(--card-radius);
     background: #374e62;
-    box-shadow: 0 6px 18px rgba(8, 24, 48, 0.06);
+    box-shadow: 0 6px 24px rgba(8, 24, 48, 0.06);
 }
-
 .partner-card a {
-    margin-top: 1vh;;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-top: 0.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none;
-    color: inherit;
     width: 100%;
-    height: 50vh;
-    border: 2px solid #1a2733
+    height: 55vh;
+    border: 4px solid #1a2733;
+    border-radius: 20px;
 }
 .partner-card img {
     max-width: 100%;
-    height: 180px;
+    height: 160px;
     object-fit: contain;
     display: block;
     margin-bottom: 8px;
 }
-
 .partner-btn {
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    display: block;
     color: white;
-    margin-top: 10vh;
+    background-color: #1e3a5f;
+    margin-top: 20vh;
     width: 100%;
     height: 8vh;
-    border: 2px #1a2733 solid;
+    border: 2.75px #1a2733 solid;
     border-radius: 25px;
-    box-shadow: rgba(8, 24, 48, 0.06)
 }
-
 
 
 .scroller:hover .scroller-inner,
 .scroller:focus-within .scroller-inner {
     animation-play-state: paused;
+}
+.partner-btn:hover {
+    background-color: #2c4f75;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
 }
 
 

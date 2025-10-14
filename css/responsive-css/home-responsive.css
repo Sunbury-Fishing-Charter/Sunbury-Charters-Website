@@ -1,3 +1,108 @@
+:root {
+    /*--- General font styles ---*/
+    --header-font: 'Georgia', serif;
+    --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --button-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --subheader-font: 'Georgia', serif;
+    --header-letter-spacing: 0.5px;
+    --subheader-letter-spacing: 0.5px;
+    --text-color: white;
+    --header-font-weight: bold;
+    --subheader-font-weight: italic;
+}
+
+
+@media (max-width: 1140px) {
+  :root {
+    --banner-font-size: 4rem;
+    --header-size: 3rem;
+    --subheader-size: 1.75rem;
+    --body-size: 1.2rem;
+  }
+}
+@media (max-width: 1080px) {
+  :root {
+    --banner-font-size: 4rem;
+    --header-size: 2.5rem;
+    --subheader-size: 1.5rem;
+    --body-size: 1.1rem;
+  }
+}
+@media (max-width: 1000px) {
+  :root {
+    --banner-font-size: 4rem;
+    --header-size: 1.8rem;
+    --subheader-size: 1.4rem;
+    --body-size: 1rem;
+  }
+}
+@media (max-width: 920px) {
+  :root {
+    --banner-font-size: 3.5rem;
+    --header-size: 1.8rem;
+    --subheader-size: 1.4rem;
+    --body-size: 1rem;
+  }
+}
+@media (max-width: 840px) {
+  :root {
+    --banner-font-size: 3.5rem;
+    --header-size: 1.8rem;
+    --subheader-size: 1.4rem;
+    --body-size: 1rem;
+  }
+}
+@media (max-width: 780px) {
+  :root {
+    --banner-font-size: 2.8rem;
+    --header-size: 1.8rem;
+    --subheader-size: 1.4rem;
+    --body-size: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  :root {
+    --banner-font-size: 2.8rem;
+    --header-size: 1.8rem;
+    --subheader-size: 1.4rem;
+    --body-size: 1rem;
+  }
+}
+@media (max-width: 620px) {
+  :root {
+    --banner-font-size: 2.5rem;
+    --header-size: 1.8rem;
+    --subheader-size: 1.4rem;
+    --body-size: 1rem;
+  }
+}
+@media (max-width: 560px) {
+  :root {
+    --banner-font-size: 2.1rem;
+    --header-size: 1.8rem;
+    --subheader-size: 1.4rem;
+    --body-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  :root {
+    --banner-font-size: 1.7rem;
+    --header-size: 1.8rem;
+    --subheader-size: 1.4rem;
+    --body-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --banner-font-size: 1.7rem;
+    --header-size: 1.8rem;
+    --subheader-size: 1.4rem;
+    --body-size: 1rem;
+  }
+}
+
+
+
 /*------------------------------------
  SCREENS 1140px AND SMALLER
 -------------------------------------- */
@@ -10,8 +115,8 @@
     .pic-title {
         left: 50%;
         top: 43%;
-        font-size: 4rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -49,10 +154,10 @@
         gap: 25px;
     }
     .subheading {
-        font-size: 1.5rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1.1rem;
+        font-size: var(--body-size);
     }
 }
 
@@ -69,8 +174,8 @@
     .pic-title {
         left: 50%;
         top: 43%;
-        font-size: 4rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -101,17 +206,17 @@
         border-radius: 10px;
     }
     .main-heading {
-        font-size: 2.5rem;
+        font-size: var(--header-size);
         margin-bottom: 0rem;
     }
     .content-wrapper {
         gap: 25px;
     }
     .subheading {
-        font-size: 1.5rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1.1rem;
+        font-size: var(--body-size);
     }
 }
 
@@ -128,8 +233,8 @@
     .pic-title {
         left: 50%;
         top: 43%;
-        font-size: 4rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -160,7 +265,7 @@
         border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.8rem;
+        font-size: var(--header-size);
         margin-bottom: 2rem;
     }
     .content-wrapper {
@@ -171,10 +276,10 @@
         height: min(220px, 80vw);
     }
     .subheading {
-        font-size: 1.4rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1rem;
+        font-size: var(--body-size);
     }
 }
 
@@ -191,8 +296,8 @@
     .pic-title {
         left: 50%;
         top: 43%;
-        font-size: 3.5rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -223,7 +328,7 @@
         border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.8rem;
+        font-size: var(--header-size);
         margin-bottom: 2rem;
     }
     .content-wrapper {
@@ -234,10 +339,10 @@
         height: min(220px, 80vw);
     }
     .subheading {
-        font-size: 1.4rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1rem;
+        font-size: var(--body-size);
     }
 }
 
@@ -253,8 +358,8 @@
     .pic-title {
         left: 50%;
         top: 43%;
-        font-size: 3.5rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -285,7 +390,7 @@
         border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.8rem;
+        font-size: var(--header-size);
         margin-bottom: 2rem;
     }
     .content-wrapper {
@@ -296,10 +401,10 @@
         height: min(220px, 80vw);
     }
     .subheading {
-        font-size: 1.4rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1rem;
+        font-size: var(--body-size);
     }
 }
 
@@ -316,8 +421,8 @@
     .pic-title {
         left: 50%;
         top: 46%;
-        font-size: 2.8rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -348,7 +453,7 @@
         border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.8rem;
+        font-size: var(--header-size);
         margin-bottom: 2rem;
     }
     .content-wrapper {
@@ -361,10 +466,10 @@
         height: min(220px, 80vw);
     }
     .subheading {
-        font-size: 1.4rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1rem;
+        font-size: var(--body-size);
     }
 }
 
@@ -381,8 +486,8 @@
     .pic-title {
         left: 50%;
         top: 46%;
-        font-size: 2.8rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -413,7 +518,7 @@
         border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.8rem;
+        font-size: var(--header-size);
         margin-bottom: 2rem;
     }
     .content-wrapper {
@@ -426,10 +531,10 @@
         height: min(220px, 80vw);
     }
     .subheading {
-        font-size: 1.4rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1rem;
+        font-size: var(--body-size);
     }
 }
 
@@ -437,7 +542,7 @@
 /*------------------------------------
  SCREENS 620px AND SMALLER
 -------------------------------------- */
-@media (max-width: 620px) {
+@media (max-width: 620ps) {
     /*---Banner Section*/
     .banner-pic {
         width: 100vw;
@@ -446,8 +551,8 @@
     .pic-title {
         left: 50%;
         top: 46%;
-        font-size: 2.5rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -478,7 +583,7 @@
         border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.8rem;
+        font-size: var(--header-size);
         margin-bottom: 2rem;
     }
     .content-wrapper {
@@ -491,10 +596,10 @@
         height: min(220px, 80vw);
     }
     .subheading {
-        font-size: 1.4rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1rem;
+        font-size: var(--body-size);
     }
 }
 
@@ -511,8 +616,8 @@
     .pic-title {
         left: 50%;
         top: 46%;
-        font-size: 2.1rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -543,7 +648,7 @@
         border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.8rem;
+        font-size: var(--header-size);
         margin-bottom: 2rem;
     }
     .content-wrapper {
@@ -556,10 +661,10 @@
         height: min(220px, 80vw);
     }
     .subheading {
-        font-size: 1.4rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1rem;
+        font-size: var(--body-size);
     }
 }
 
@@ -576,8 +681,8 @@
     .pic-title {
         left: 50%;
         top: 46%;
-        font-size: 1.7rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -608,7 +713,7 @@
         border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.8rem;
+        font-size: var(--header-size);
         margin-bottom: 2rem;
     }
     .content-wrapper {
@@ -621,10 +726,10 @@
         height: min(220px, 80vw);
     }
     .subheading {
-        font-size: 1.4rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1rem;
+        font-size: var(--body-size);
     }
 }
 
@@ -641,8 +746,8 @@
     .pic-title {
         left: 50%;
         top: 46%;
-        font-size: 1.7rem;
-        letter-spacing: 1.5px;
+        font-size: var(--banner-font-size);
+        letter-spacing: var(--header-letter-spacing);
     }
     .pic-title-date{
         width: "";
@@ -673,7 +778,7 @@
         border-radius: 10px;
     }
     .main-heading {
-        font-size: 1.8rem;
+        font-size: var(--header-size);
         margin-bottom: 2rem;
     }
     .content-wrapper {
@@ -686,9 +791,9 @@
         height: min(220px, 80vw);
     }
     .subheading {
-        font-size: 1.4rem;
+        font-size: var(--subheader-size);
     }
     .description {
-        font-size: 1rem;
+        font-size: var(--body-size);
     }
 }
