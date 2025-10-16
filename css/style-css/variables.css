@@ -40,7 +40,7 @@
     --alt-text-color: #2c3e50; /* Dark navy color for text on light backgrounds */
     --gray-text-color: #555; /* Medium gray for body text on light backgrounds */
     --header-font-weight: bold;
-    --subheader-font-weight: italic;
+    --subheader-font-style: italic;
     --body-font-weight: normal;
     --button-font-weight: bold;
 
