@@ -50,8 +50,36 @@ def select_images():
     return file_paths
 
 
+def get_next_gallery_number():
+    """Finds the highest gallery image number and returns the next one"""
+    
+    if not os.path.exists(IMAGES_FOLDER):
+        return 1
+    
+    # Get all files in the gallery folder
+    existing_files = os.listdir(IMAGES_FOLDER)
+    
+    # Find all files that match "Gallery image X" pattern
+    max_number = 0
+    for filename in existing_files:
+        if filename.startswith("Gallery image "):
+            # Extract the number from the filename
+            try:
+                # Get the part between "Gallery image " and the file extension
+                number_part = filename.replace("Gallery image ", "").split(".")[0]
+                number = int(number_part)
+                if number > max_number:
+                    max_number = number
+            except ValueError:
+                # If we can't parse the number, skip it
+                continue
+    
+    # Return the next number
+    return max_number + 1
+
+
 def copy_images_to_gallery(image_paths):
-    """Copies selected images to the Images/Gallery folder"""
+    """Copies selected images to the Images/Gallery folder with clean names"""
     
     # Create the Images/Gallery folder if it doesn't exist
     if not os.path.exists(IMAGES_FOLDER):
@@ -60,22 +88,26 @@ def copy_images_to_gallery(image_paths):
     
     copied_images = []
     
+    # Start numbering from the next available number
+    next_number = get_next_gallery_number()
+    
     for image_path in image_paths:
-        # Get just the filename (like "fish.jpg")
-        filename = os.path.basename(image_path)
+        # Get the file extension (like ".jpg" or ".png")
+        file_extension = os.path.splitext(image_path)[1]
+        
+        # Create the new filename
+        new_filename = f"Gallery image {next_number}{file_extension}"
         
         # Where the image will be copied to
-        destination = os.path.join(IMAGES_FOLDER, filename)
+        destination = os.path.join(IMAGES_FOLDER, new_filename)
         
-        # Check if image already exists
-        if os.path.exists(destination):
-            print(f"⚠️  Skipped (already exists): {filename}")
-            continue
-        
-        # Copy the image
+        # Copy the image with the new name
         shutil.copy2(image_path, destination)
-        print(f"✓ Copied: {filename}")
-        copied_images.append(filename)
+        print(f"✓ Copied as: {new_filename}")
+        copied_images.append(new_filename)
+        
+        # Increment for the next image
+        next_number += 1
     
     return copied_images
 

@@ -1,3 +1,30 @@
+:root {
+    /*--- CSS Variables for the partner scroller ---*/
+    --scroller-speed: 65s;  
+    --card-width: 290px;
+    --card-gap: 55px;
+    --card-padding: 20px;
+    --card-radius: 20px;
+    
+    /*--- General font styles ---*/
+    --header-font: 'Georgia', serif;
+    --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --button-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --subheader-font: 'Georgia', serif;
+    --header-size: 3rem;
+    --subheader-size: 1.75rem;
+    --body-size: 1.2rem;
+    --banner-font-size: 7rem;
+    --header-letter-spacing: 0.5px;
+    --subheader-letter-spacing: 0.5px;
+    --text-color: white;
+    --header-font-weight: bold;
+    --subheader-font-weight: italic;
+}
+
+
+
+
 /* ============================================
    BASIC PAGE SETUP
    ============================================ */
@@ -75,7 +102,7 @@ html, body {
     gap: 0.8%;
     flex-wrap: wrap;
     padding: 2.7% 0;
-    background-color: var(--primary-navy-bg);
+    background-color: #1a2733;
 }
 .top-fishing-examples img {
     width: 23vw;
@@ -93,14 +120,14 @@ html, body {
 
 /* Background section for the captain info */
 .fishing-charter-in-sunbury {
-    background-color: var(--secondary-grey-bg);
+    background-color: #f8f9fa;
     padding: clamp(40px, 8vw, 60px) 20px;
 }
 /* White container box for captain content */
 .fishing-charter-container {
     max-width: 1200px;
     margin: 0 auto;
-    background: var(--section-overlay-accent);
+    background: white;
     padding: clamp(30px, 6vw, 60px) clamp(20px, 4vw, 40px);
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -112,7 +139,7 @@ html, body {
     font-weight: var(--header-font-weight);
     font-family: var(--header-font);
     letter-spacing: var(--header-letter-spacing);
-    color: var(--alt-text-color);
+    color: #2c3e50;
     margin-bottom: clamp(20px, 4vw, 40px);
 }
 
@@ -148,40 +175,36 @@ html, body {
 .subheading {
     font-size: var(--subheader-size);
     font-family: var(--subheader-font);
-    color: var(--alt-text-color);
-    letter-spacing: var(--subheader-letter-spacing);
+    color: #2c3e50;
     margin-bottom: 8px;
 }
 
 /* Description paragraph text */
 .description {
     font-size: var(--body-size);
-    color: var(--gray-text-color);
-    letter-spacing: var(--body-letter-spacing);
+    color: #555;
     line-height: 1.7;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-family: var(--body-font);
 }
 
 /* Get started today button */
 .cta-button {
-    background-color: var(--primary-button-bg);  /* Dark blue background */
+    background-color: #1e3a5f;  /* Dark blue background */
     color: var(--text-color);               /* White text */
     padding: clamp(12px, 2.5vw, 15px) clamp(25px, 5vw, 35px);
     font-size: var(--body-size);
-    font-weight: var(--button-font-weight);
+    font-weight: var(--header-font-weight);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     font-family: var(--body-font);
-    letter-spacing: var(--body-letter-spacing);
 }
 
 /* Button hover effect */
 .cta-button:hover {
-    color: var(--text-hover-orange);  /* Orange text on hover */
-    background-color: var(--button-hover-bg);  /* Lighter blue on hover */
+    background-color: #2c4f75;  /* Lighter blue on hover */
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
 }
@@ -194,8 +217,8 @@ html, body {
 .fishing-partners {
     padding-block: 1rem;
     background: transparent;
-    background-color: var(--primary-navy-bg);
-    margin-bottom: 3.5vh;
+    background-color: #1a2733;
+    margin-bottom: 1.5rem;
 }
 .partners-title {
     text-align: center;
@@ -209,7 +232,7 @@ html, body {
 .scroller {
     overflow: hidden;
     width: 100%;
-} 
+}
 .scroller-inner {
     display: flex;
     gap: var(--card-gap);
@@ -222,7 +245,7 @@ html, body {
     justify-content: center;
     padding: var(--card-padding);
     border-radius: var(--card-radius);
-    background: var(--lighter-blue-accent);
+    background: #374e62;
     box-shadow: 0 6px 24px rgba(8, 24, 48, 0.06);
 }
 .partner-card div {
@@ -246,12 +269,12 @@ html, body {
 }
 
 .partner-description {
-    color: var(--text-color);
+    color: #e0e6ed;
     font-size: var(--body-size);
-    letter-spacing: var(--body-letter-spacing);
+    letter-spacing: var(--subheader-letter-spacing);
     font-family: var(--body-font);
     padding-left: 2px;
-    padding-right: 2px;
+    padding-right: 1px;
 }
 
 .partner-btn {
@@ -259,15 +282,12 @@ html, body {
     font-family: var(--button-font);
     text-align: center;
     color: var(--text-color);
-    letter-spacing: var(--body-letter-spacing);
-    font-weight: var(--button-font-weight);
-    background-color: var(--primary-button-bg);
+    background-color: #1e3a5f;
     margin-top: 5.5vh;
     width: 90%;
     height: 8vh;
     border: 2.75px #1a2733 solid;
     border-radius: 25px;
-    transition: all 0.4s ease;
 }
 
 
@@ -276,8 +296,9 @@ html, body {
     animation-play-state: paused;
 }
 .partner-btn:hover {
-    color: var(--text-hover-orange);
-    background-color: var(--button-hover-bg);
+    background-color: #2c4f75;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(30, 58, 95, 0.3);
 }
+
+
