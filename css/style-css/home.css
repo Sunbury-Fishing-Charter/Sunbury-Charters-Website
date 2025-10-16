@@ -232,7 +232,7 @@ html, body {
 .scroller {
     overflow: hidden;
     width: 100%;
-}
+} 
 .scroller-inner {
     display: flex;
     gap: var(--card-gap);
