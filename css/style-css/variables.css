@@ -33,7 +33,7 @@
     /*--- General letter spacing ---*/
     --header-letter-spacing: 0.5px;
     --subheader-letter-spacing: 0.5px;
-    --body-letter-spacing: 0.5px;
+    --body-letter-spacing: 0.15px;
 
     /*--- General font colors and weights ---*/
     --text-color: white; 
