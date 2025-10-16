@@ -1,0 +1,108 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "Tk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "select_images",
+        "kind": 2,
+        "importPath": "Automated_Gallery_Upload",
+        "description": "Automated_Gallery_Upload",
+        "peekOfCode": "def select_images():\n    \"\"\"Opens a file dialog to let you select images\"\"\"\n    print(\"Opening file picker...\")\n    # Create a hidden Tkinter window\n    root = Tk()\n    root.withdraw()  # Hide the main window\n    root.attributes('-topmost', True)  # Bring dialog to front\n    # Open file picker - you can select multiple images\n    file_paths = filedialog.askopenfilenames(\n        title=\"Select images to add to gallery\",",
+        "detail": "Automated_Gallery_Upload",
+        "documentation": {}
+    },
+    {
+        "label": "get_next_gallery_number",
+        "kind": 2,
+        "importPath": "Automated_Gallery_Upload",
+        "description": "Automated_Gallery_Upload",
+        "peekOfCode": "def get_next_gallery_number():\n    \"\"\"Finds the highest gallery image number and returns the next one\"\"\"\n    if not os.path.exists(IMAGES_FOLDER):\n        return 1\n    # Get all files in the gallery folder\n    existing_files = os.listdir(IMAGES_FOLDER)\n    # Find all files that match \"Gallery image X\" pattern\n    max_number = 0\n    for filename in existing_files:\n        if filename.startswith(\"Gallery image \"):",
+        "detail": "Automated_Gallery_Upload",
+        "documentation": {}
+    },
+    {
+        "label": "copy_images_to_gallery",
+        "kind": 2,
+        "importPath": "Automated_Gallery_Upload",
+        "description": "Automated_Gallery_Upload",
+        "peekOfCode": "def copy_images_to_gallery(image_paths):\n    \"\"\"Copies selected images to the Images/Gallery folder with clean names\"\"\"\n    # Create the Images/Gallery folder if it doesn't exist\n    if not os.path.exists(IMAGES_FOLDER):\n        os.makedirs(IMAGES_FOLDER)\n        print(f\"Created folder: {IMAGES_FOLDER}\")\n    copied_images = []\n    # Start numbering from the next available number\n    next_number = get_next_gallery_number()\n    for image_path in image_paths:",
+        "detail": "Automated_Gallery_Upload",
+        "documentation": {}
+    },
+    {
+        "label": "update_gallery_html",
+        "kind": 2,
+        "importPath": "Automated_Gallery_Upload",
+        "description": "Automated_Gallery_Upload",
+        "peekOfCode": "def update_gallery_html(new_images):\n    \"\"\"Updates the gallery.html file with new image tags\"\"\"\n    if not new_images:\n        print(\"\\nNo new images to add to HTML.\")\n        return\n    # Read the current HTML file\n    with open(GALLERY_HTML, 'r', encoding='utf-8') as file:\n        html_content = file.read()\n    # Find where to insert the new images (right after <div class=\"photo-grid\">)\n    insert_marker = '<div class=\"photo-grid\">'",
+        "detail": "Automated_Gallery_Upload",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Automated_Gallery_Upload",
+        "description": "Automated_Gallery_Upload",
+        "peekOfCode": "def main():\n    \"\"\"Main function that runs everything\"\"\"\n    print(\"=\" * 50)\n    print(\"Sunbury Charters - Gallery Updater\")\n    print(\"=\" * 50)\n    print(f\"Working in folder: {WEBSITE_FOLDER}\")\n    print()\n    # Check if gallery.html exists\n    if not os.path.exists(GALLERY_HTML):\n        print(f\"ERROR: gallery.html not found in this folder!\")",
+        "detail": "Automated_Gallery_Upload",
+        "documentation": {}
+    },
+    {
+        "label": "WEBSITE_FOLDER",
+        "kind": 5,
+        "importPath": "Automated_Gallery_Upload",
+        "description": "Automated_Gallery_Upload",
+        "peekOfCode": "WEBSITE_FOLDER = os.path.dirname(os.path.abspath(__file__))\n# The path to your gallery.html file\nGALLERY_HTML = os.path.join(WEBSITE_FOLDER, \"gallery.html\")\n# The folder where images should be stored\nIMAGES_FOLDER = os.path.join(WEBSITE_FOLDER, \"Images\", \"Gallery\")\n# ============================================\n# MAIN SCRIPT - Don't need to edit below\n# ============================================\ndef select_images():\n    \"\"\"Opens a file dialog to let you select images\"\"\"",
+        "detail": "Automated_Gallery_Upload",
+        "documentation": {}
+    },
+    {
+        "label": "GALLERY_HTML",
+        "kind": 5,
+        "importPath": "Automated_Gallery_Upload",
+        "description": "Automated_Gallery_Upload",
+        "peekOfCode": "GALLERY_HTML = os.path.join(WEBSITE_FOLDER, \"gallery.html\")\n# The folder where images should be stored\nIMAGES_FOLDER = os.path.join(WEBSITE_FOLDER, \"Images\", \"Gallery\")\n# ============================================\n# MAIN SCRIPT - Don't need to edit below\n# ============================================\ndef select_images():\n    \"\"\"Opens a file dialog to let you select images\"\"\"\n    print(\"Opening file picker...\")\n    # Create a hidden Tkinter window",
+        "detail": "Automated_Gallery_Upload",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGES_FOLDER",
+        "kind": 5,
+        "importPath": "Automated_Gallery_Upload",
+        "description": "Automated_Gallery_Upload",
+        "peekOfCode": "IMAGES_FOLDER = os.path.join(WEBSITE_FOLDER, \"Images\", \"Gallery\")\n# ============================================\n# MAIN SCRIPT - Don't need to edit below\n# ============================================\ndef select_images():\n    \"\"\"Opens a file dialog to let you select images\"\"\"\n    print(\"Opening file picker...\")\n    # Create a hidden Tkinter window\n    root = Tk()\n    root.withdraw()  # Hide the main window",
+        "detail": "Automated_Gallery_Upload",
+        "documentation": {}
+    }
+]

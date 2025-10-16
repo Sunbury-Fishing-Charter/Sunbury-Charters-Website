@@ -1,0 +1,60 @@
+:root {
+    /* ------------------------
+    HOME PAGE VARIABLES
+    --------------------------- */
+
+    /*--- CSS Variables for the partner scroller ---*/
+    --scroller-speed: 65s;  
+    --card-width: 290px;
+    --card-gap: 55px;
+    --card-padding: 20px;
+    --card-radius: 20px;
+
+    /*--- Top Banner font size ---*/
+    --banner-font-size: 7rem;
+
+    
+ 
+    /* ------------------------
+    DEFAULT fONT VARIABLES
+    --------------------------- */
+  
+    /*--- General font families ---*/
+    --header-font: 'Georgia', serif;
+    --subheader-font: 'Georgia', serif;
+    --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --button-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /*--- General font sizes ---*/
+    --header-size: 3rem;
+    --subheader-size: 1.75rem;
+    --body-size: 1.2rem;
+
+    /*--- General letter spacing ---*/
+    --header-letter-spacing: 0.5px;
+    --subheader-letter-spacing: 0.5px;
+    --body-letter-spacing: 0.15px;
+
+    /*--- General font colors and weights ---*/
+    --text-color: white; 
+    --alt-text-color: #2c3e50; /* Dark navy color for text on light backgrounds */
+    --gray-text-color: #555; /* Medium gray for body text on light backgrounds */
+    --header-font-weight: bold;
+    --subheader-font-style: italic;
+    --body-font-weight: normal;
+    --button-font-weight: bold;
+
+
+    /*-- Background colors --*/
+    --primary-navy-bg: #1a2733; /*Main dark blue color*/
+    --secondary-grey-bg: #f8f9fa; /*Light grey background for sections*/
+    --primary-button-bg: #1e3a5f; /*Dark blue for buttons*/
+
+    /*--Accent colors --*/
+    --text-hover-orange: #ffb347; /*Orange color for text hover*/
+    --button-hover-bg: #2c4f75; /*lighter blue for button hover*/
+    --lighter-blue-accent: #374e62;
+    --section-overlay-accent: white; /* overlay for boxes shown on top of sections*/
+
+
+}
